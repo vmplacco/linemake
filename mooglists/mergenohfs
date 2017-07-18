@@ -1,0 +1,8 @@
+cat tiI.moog tiII.moog vI.moog vII.moog crI.moog crII.moog feI.moog feII.moog \
+    coI.moog niI.moog \
+    yII.moog zrII.moog laII.moog ceII.moog ceII.cullbie \
+    prII.moog ndII.moog smII.moog euII.moog gdII.moog tbII.moog \
+    dyII.moog erII.moog tmII.moog luII.moog hfII.moog ptI.moog \
+    > temp ; \
+sort -bn -o goodgf -k 1 temp ;\
+\rm temp 
