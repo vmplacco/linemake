@@ -20,11 +20,12 @@ that have generated these atomic/molecular data sets. See references below.**
 
 ## NOTES
 
+Update for Fe I, October 28 2017
 Chris Sneden & Vini Placco, July 18 2017
 
 ### SOURCES OF GF'S, HFS/ISO, AND OTHER COMMENTS 
 
-UPDATED JULY 2017; THESE LINE LISTS ARE CONSERVATIVE IN THE SENSE THAT THEY
+UPDATED OCTOBER 2017; THESE LINE LISTS ARE CONSERVATIVE IN THE SENSE THAT THEY
      DO NOT INCLUDE DATA FOR SOME SPECIES THAT MIGHT BE PRETTY GOOD BUT ARE
      IN NEED OF NEW LAB WORK, SUCH AS NI II AND CO II.
 
@@ -141,12 +142,15 @@ information in the Kurucz database, collected in scI.kurhfs
 hfs information in the Kurucz database
 
 * Fe I:   recent lab studies are by Ruffoni et al. (2014, MNRAS, 441, 3127)
-and Den Hartog (2014, ApJS, 215, 23).  These papers deal with lines
-arising (in absorption) from levels with E.P. >~ 2.3 eV.  These have
-been combined with older-but-still-reliable gf values from
-O'Brian et al. (1991, JOSAB, 8, 1185) for lower-excitation transitions.  
-The Wisconsin group is completing another Fe I paper and results will 
-be public in a few months.
+Den Hartog (2014, ApJS, 215, 23), and Belmonte et al. (2017, ApJ, 848, 126).  
+Thefirst two of these papers deal with lines arising (in absorption) from 
+levels with E.P. >~ 2.3 eV.  One of the good things about the last paper
+is that it overlaps the older-but-still-mostly-reliable study of O'Brian 
+et al. (1991, JOSAB, 8, 1185) for lower-excitation transitions.  
+Here I have chosen to adopt the new lab values, and have added in the
+O'Brian values not included in the Belmonte paper AND with E.P < 2.2 eV.
+I consider this list to be as close to an "internally consistent single
+source" as we are likely to get for a while.
 
 * Fe II:  There is no comprehensive single-source list of gf-values;
 therefore the NIST database values are adopted here.  At the end of each
