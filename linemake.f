@@ -17,7 +17,7 @@ c     the ones found in an input line list
 
 c*****declare internally where the good gf lists and the Kurucz lists are
       linepath = 
-     .          '/Users/chris/MOOGSTUFF/explinemake/mooglists'
+     .          '/Users/vplacco/posdoc/linemake/mooglists'
       call countline (linepath, nlp)
       if (linepath(nlp:nlp) .ne. '/') then
          nlp = nlp + 1
@@ -406,7 +406,7 @@ c*****wavelengths
 c*****end normally
 60    close (unit=nunit)
       close (unit=noutunit)
-      call system ('\\rm outtemp')
+      call system ('\rm outtemp')
       write (*,*) 'DONE!  CHECK THE LINE LIST CAREFULLY!'
 
 
