@@ -17,7 +17,7 @@ c     the ones found in an input line list
 
 c*****declare internally where the good gf lists and the Kurucz lists are
       linepath = 
-     .          '/Users/vplacco/posdoc/linemake/mooglists'
+     .          '/Users/chris/MOOGSTUFF/explinemake/mooglists'
       call countline (linepath, nlp)
       if (linepath(nlp:nlp) .ne. '/') then
          nlp = nlp + 1
@@ -312,8 +312,8 @@ c     the other odd-Z Fe-peak first ions); the hfs for Mn I & Mn II are
 c     already done earlier because the lab studies have put them
 c     into the googf and goodgfhfs lists
       write (*,*) 'add Kurucz hfs for Fe-group lines without recent'
-      write (*,*) 'lab studies, including lines of Sc I, Sc II, V I,'
-      write (*,*) 'Mn I, & Cu I (y/n)? '
+      write (*,*) 'lab studies, including lines of Sc I, Sc II,',
+     .            ' & Cu I (y/n)? '
       call makechoice (choice)                             
       if (choice .eq. 'y') then
          call blankstring (inlist)                                
@@ -406,7 +406,7 @@ c*****wavelengths
 c*****end normally
 60    close (unit=nunit)
       close (unit=noutunit)
-      call system ('\rm outtemp')
+      call system ('\\rm outtemp')
       write (*,*) 'DONE!  CHECK THE LINE LIST CAREFULLY!'
 
 
