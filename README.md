@@ -2,8 +2,11 @@
 Added new Co II lab data, and published lab data for mostly neutron-capture 
     species lines (mostly in the UV) employed in recent papers by 
     Ian Roederer, March 17 2018
+
 Update for Fe I, October 28 2017
+
 Vini Placco & Chris Sneden, July 18 2017
+
 Ian Roederer & Vini Placco, & Chris Sneden, Dec 7 2017
 -----------------------------------------------------------------------------
 
