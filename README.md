@@ -2,12 +2,12 @@
 
 -----------------------------------------------------------------------------
 
-- Added new Co II lab data, and published lab data for mostly neutron-capture 
-    species lines (mostly in the UV) employed in recent papers by 
-    Ian Roederer, March 17 2018
-- Update for Fe I, October 28 2017
-- Vini Placco & Chris Sneden, July 18 2017
-- Ian Roederer & Vini Placco, & Chris Sneden, Dec 7 2017
+- 2018-07-02: Fixed Sc mooglists
+- 2018-03-17: Added new Co II lab data, and published lab data for mostly neutron-capture 
+  species lines (mostly in the UV) employed in recent papers by Ian Roederer
+- 2017-10-28: Update for Fe I
+- 2017-12-07: Ian Roederer & Vini Placco, & Chris Sneden
+- 2017-07-18: Vini Placco & Chris Sneden
 
 -----------------------------------------------------------------------------
 
