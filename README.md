@@ -2,6 +2,7 @@
 
 -----------------------------------------------------------------------------
 
+- 2018-09-09: Corrected Co II hfs file
 - 2018-07-29: Corrected the Kurucz Co I hfs file
 - 2018-07-02: Fixed Sc mooglists
 - 2018-03-17: Added new Co II lab data, and published lab data for mostly 
