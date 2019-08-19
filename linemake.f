@@ -3,21 +3,21 @@
 c*****this routine substitutes good gf, hfs, and isotopic line values for
 c     the ones found in an input line list
  
-      real*8 wavei(100000), idi(100000), epi(100000), loggfi(100000)
-      real*8 waveg(40000), idg(40000), epg(40000), loggfg(40000) 
+      real*8 wavei(1000000), idi(1000000), epi(1000000), loggfi(1000000)
+      real*8 waveg(80000), idg(80000), epg(80000), loggfg(80000) 
       real*8 wavegin, idgin, epgin, loggfgin
       real*8 wavekin, idkin, epkin, loggfkin
       real*8 wavelo, wavehi
       integer molatom, nlist, itot, nlp, nstring, nunit, noutunit
       character*80 inlist, outlist, linepath, string
-      character*40 texti(100000), textg(40000), textgin, textkin, 
+      character*40 texti(1000000), textg(80000), textgin, textkin, 
      .             testchars
       character*1 choice
 
 
 c*****declare internally where the good gf lists and the Kurucz lists are
       linepath = 
-     .          '/Users/vplacco/posdoc/linemake/mooglists'
+     .          '/Users/alexji/Dropbox/S5/linelists/linemake/mooglists'
       call countline (linepath, nlp)
       if (linepath(nlp:nlp) .ne. '/') then
          nlp = nlp + 1
@@ -394,7 +394,7 @@ c*****wavelengths
       noutunit = 8
       open (noutunit,file='outsort')
       write (noutunit,1013) wavelo, wavehi
-      do i=1,100000
+      do i=1,1000000
          call blankstring (string)
          read (nunit,1014,end=60) string(1:80)
          read (string,*) wavegin
@@ -418,7 +418,7 @@ c*****format statements
 1006  format ('adding new line with hfs/iso components: ', 
      .           f10.3, f10.1)
 1007  format (f10.3, f10.4, f10.3, f10.3, a40)
-1008  format (f10.3, f10.1, f10.3, f10.2, a40)
+1008  format (f10.3, f10.1, f10.3, f10.3, a40)
 1009  format ('                                        ')
 1010  format (f10.3, f10.1, f10.3, f10.3, a40)
 1011  format (f10.3, f10.5, f10.3, f10.3, a40)
