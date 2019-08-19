@@ -2,7 +2,7 @@
 
 -----------------------------------------------------------------------------
 
-- 2019-08-18: Replaced CH with Masseron; added some NIST values for light elements in `goodgf`; fixed Fe II in `goodgf` to include DenHartog et al. 2016 
+- 2019-08-18: Replaced CH with Masseron; added some NIST values for light elements in `goodgf`; fixed Fe II in `goodgf` to include DenHartog et al. 2019 and Melendez et al. 2009
 - 2018-09-09: Corrected Co II hfs file
 - 2018-07-29: Corrected the Kurucz Co I hfs file
 - 2018-07-02: Fixed Sc mooglists
