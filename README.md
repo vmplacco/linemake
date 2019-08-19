@@ -2,6 +2,7 @@
 
 -----------------------------------------------------------------------------
 
+- 2019-08-18: Replaced CH with Masseron; added some NIST values for light elements in `goodgf`; fixed Fe II in `goodgf` to include DenHartog et al. 2016 
 - 2018-09-09: Corrected Co II hfs file
 - 2018-07-29: Corrected the Kurucz Co I hfs file
 - 2018-07-02: Fixed Sc mooglists
@@ -144,10 +145,12 @@ ATOMIC SPECIES: FE-GROUP ELEMENTS (LISTED IN ORDER OF ATOMIC NUMBER)
 Sc I:   to be done, so any hfs information is not to be trusted much,
 although it is collected in scI.kurhfs and scII.kurhfs; the gf's when
 possible are from Lawler & Dakin 1991
+[NOTE: this has been updated 2018-07-02]
 
 ScII:  to be done, so any hfs information is not to be trusted much,
 although it is collected in scI.kurhfs and scII.kurhfs; the gf's when
 possible are from Lawler & Dakin 1991
+[NOTE: this has been updated 2018-07-02]
 
 Ti I:   Lawler et al. (2013, ApJS, 205, 11)
 
@@ -188,6 +191,14 @@ source" as we are likely to get for a while.
 Fe II:  There is no comprehensive single-source list of gf-values;
 therefore the NIST database values are adopted here.  At the end of each
 line the NIST quality rating, e.g., NISTC+ appears. 
+
+UPDATE 2019-08-18 (APJ): I replaced loggf values for Fe II using Den Hartog et al. 2019 https://ui.adsabs.harvard.edu/abs/2019ApJS..243...33D/abstract and Melendez & Barbuy 2009 https://ui.adsabs.harvard.edu/abs/2009A%26A...497..611M/abstract.
+The number of Fe II lines in goodgf and replaced is:
+```
+N_total = 2579
+N_den19 = 118/131 [the remaining lines have lambda < 3000A so I didn't worry about it]
+N_mel09 = 69/142 [8 of these are in Den Hartog]
+```
 
 Co I:   Lawler et al. (2015, ApJS, 220, 13); Co I with and without hfs
 are in different files here.
@@ -248,3 +259,23 @@ delta-v = 3 lines alone.  This small alteration is in the CO line list here.
 
 OH ro-vibrational bands:  Brooke et al. (2015, JQSRT, 168, 142)
 
+CH (APJ): I have put in the linelist from Masseron et al. 2014 based on this file from Kurucz http://kurucz.harvard.edu/molecules/ch/chmasseron.asc into `mooglists/mooghyd*`. In the process, I cut to only keep CH lines with loggf > -6 (based on some tests done years ago, I decided this was okay). https://ui.adsabs.harvard.edu/abs/2014A%26A...571A..47M/abstract
+
+
+OTHER ATOMIC LINES (APJ): (these are added to goodgf manually)
+
+O I: 6300A and 6363b from VALD
+
+Na: 5682, 5688, 5889, 5895 from NIST (AA for D lines, A for the other two). Note for 5688 I merged the loggf a strong and a weak line at the same wavelength.
+
+Mg: I put in 9 lines from NIST of varying quality. Probably of particular note is that the Mg b lines now have NIST A and NIST B+, and they are a bit different from Kurucz by 0.01 dex.
+
+Al: I put in four Al lines 3944, 3961 (NIST B+) and 6696, 6698 (NIST C+)
+
+Si: I put in a bunch of lines with NIST values. Except for 3905, they are grade C and below.
+
+K: I put in the NIST AAA values for 7665 and 7699, which are within .01 of the Kurucz values.
+
+Ca: I put in a mix of things from VALD and NIST. These were checked against HD122563 as doing a pretty good job.
+
+Sr: For 4215 I updated from an older NIST/A to NIST AA value.
