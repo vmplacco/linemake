@@ -1,10 +1,7 @@
 #!/bin/bash
 
-for i in $(ls *.lin | sed -e 's/.lin//g')
-	do
-
-low=$(echo "$i-15" | bc -l)
-upp=$(echo "$i+15" | bc -l)
+low=$(echo "$1-5" | bc -l)
+upp=$(echo "$1+5" | bc -l)
 
 lmake << EOF
 
@@ -19,7 +16,5 @@ y
 
 EOF
 
-mv outsort $i.lin
+mv outsort $1.lin
 rm outlines
-
-done
