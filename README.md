@@ -1,4 +1,4 @@
-**`linemake`**
+*`linemake`: Atomic and Molecular Line List Generator*
 
 -----------------------------------------------------------------------------
 
