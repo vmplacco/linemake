@@ -1,9 +1,10 @@
-# `linemake`: Atomic and Molecular Line List Generator
+# `linemake` Atomic and Molecular Line List Generator
 
 ## About the code
 
 ## Description of the database
 
+---
 ### Atomic Species: Fe-group Elements
 
 * Sc I: Lawler et al. (2019, ApJS, 241, 21); includes HFS
@@ -27,6 +28,7 @@
 * Zn I: Roederer & Lawler (2012, ApJ, 750, 7Z)                                                     
 * Zn II: Bergeson & Lawler (1993, ApJ, 408, 382)
 
+---
 ### Atomic Species: Neutron-Capture Elements
 
 * Ge I: Li et al. (1999, PRA, 60, 198). These nearly exactly match the ones from Biemont et al (1999, MN RAS, 303, 721), and Biemont is an author on both papers.
@@ -70,6 +72,7 @@
 * Pb I: Roederer et al. (2012, ApJ, 750, 76).
 * Pb II: Roederer et al. (2020, ApJL, 902, L24) for one UV line.
 
+---
 ### Atomic Species: Other Elements
 
 * Li I resonance line: nothing special needs to be done here to get the full isotopic and hyperfine substructure. The total *gf* from Kurucz, has been adopted; it is close to that recommended by NIST.
@@ -77,6 +80,7 @@
 * Ca I: Den Hartog et al. (2021, ApJS, submitted). This is a combined lab and theoretical study, and the included transitions have transition probabilities now with very small uncertainties.
 * Ca II: Den Hartog et al. (2021, ApJS, submitted). No new lab data here, but Ca II is a well-studied single electron species
 
+---
 ### Molecular (mostly diatomic) Species
 
 * MgH:  Hinkle et al. (2013, ApJS, 207, 26)                       
