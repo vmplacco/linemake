@@ -92,7 +92,7 @@ There is one `linemake` oddity that we have no interest in addressing for the fo
 ### Molecular (mostly diatomic) Species
 
 * `MgH`: Hinkle et al. (2013, ApJS, 207, 26)
-* `C<sub>2</sub>` Swan bands:  Ram et al. (2014, ApJS, 211, 5); note that 0.089eV has been added to all of the excitation energies to account for the fact that the lower level of the Swan system is not exactly at the lowest possible vibrational state.                                              
+* <code>C<sub>2</sub></code> Swan bands:  Ram et al. (2014, ApJS, 211, 5); note that 0.089eV has been added to all of the excitation energies to account for the fact that the lower level of the Swan system is not exactly at the lowest possible vibrational state.                                              
 * `CH`: Masseron et al. (2014, A\&A, 571, 47; files obtained from Bertrand Plez
 * `CN`: (violet and red)  Sneden et al. (2014, ApJS, 214, 26)         
 * `CO`: Pretty much the relatively simply CO parameters in the IR ro-vibrational bands have been known for a couple of decades. However, in trial syntheses conducted by Chris Sneden and Melike Af{\c s}ar it was noticed that that K-band $\Delta$v = 2 first overtone band strengths were too strong for the C and O  abundances derived from optical data. But they also clashed with the H-band $\Delta$v = 3 "second overtone" bands in similar fashion.  Therefore we decided to raise the $gf$-values of the $\Delta$v = 2 lines by 0.15 dex, and leave the $\Delta$v = 3 lines alone.  This small pragmatic alteration is in the CO line list here; users need to be aware of this if CO is used for abundance determinations.  
