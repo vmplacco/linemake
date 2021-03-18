@@ -1,10 +1,16 @@
 # `linemake` Atomic and Molecular Line List Generator
 
+## About 
+
+`linemake` is an open-source atomic and molecular line list generator. Rather than a replacement for a number of well-established atomic and molecular spectral databases, `linemake` aims to be a lightweight, easy-to-use tool to generate formatted and curated lists suitable for spectral synthesis work. We stress that the users of should be *in charge* of all of their transition data, and should cite the appropriate sources in their published work, given below.
+
 ## Disclaimer
 
 The choices of which lines of which species to include in `linemake` have often been driven by the authors' own spectroscopic interests (e.g., note the large number of entries for transitions of neutron-capture elements that can only be detected in vacuum-UV spectroscopy). However, we would welcome hearing from users who can suggest other strongly-sourced species (with recent reliable lab/theory results) that might be added to our database.
 
-## About the code
+## Compiling the code and known idiosyncrasies
+
+First, edit the `linemake.f` at the start of the program, to point the code to its species linelists `linepath='\$PATHTO/mooglists'`. Then, compile the code:
 
     gfortran linemake.f -o linemake.go
 
