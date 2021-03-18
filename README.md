@@ -1,6 +1,14 @@
 # `linemake` Atomic and Molecular Line List Generator
 
+## Disclaimer
+
+The choices of which lines of which species to include in `linemake` have often been driven by the authors' own spectroscopic interests (e.g., note the large number of entries for transitions of neutron-capture elements that can only be detected in vacuum-UV spectroscopy). However, we would welcome hearing from users who can suggest other strongly-sourced species (with recent reliable lab/theory results) that might be added to our database.
+
 ## About the code
+
+    gfortran linemake.f  -o linemake.go
+
+There is one \linemake\ oddity that we have no interest in addressing for the foreseeable future. The code will refuse to work (and will say so) when the requested beginning and ending wavelengths bridge the divide between two files of atomic line data, each of which covers 1000Å. As a result, if you have a desired line list from, e.g., 5990Å to 6010Å, the code would crash without the built-in exit. The simple work-around is to run the code twice, in the example case from 5990Å to 5999.999Å, and from 6000Å to 6010Å.
 
 ## Description of the database
 
