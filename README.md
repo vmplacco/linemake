@@ -39,46 +39,46 @@ There is one `linemake` oddity that we have no interest in addressing for the fo
 ---
 ### Atomic Species: Neutron-Capture Elements
 
-* Ge I: Li et al. (1999, PRA, 60, 198). These nearly exactly match the ones from Biemont et al (1999, MN RAS, 303, 721), and Biemont is an author on both papers.
-* As I: Roederer & Lawler (2012, ApJ, 750, 76); Roederer et al., in preparation) with HFS.
-* Se I: Roederer & Lawler (2012, ApJ, 750, 76)                  
-* Rb I: NIST                                                    
-* Sr I: NIST                                                    
-* Sr II: NIST                                                    
-* Y II: Hannaford et al. (1982, ApJ, 261, 736) and Biemont et al. (2011, MNRAS, 414, 3350)
-* Zr II: Ljung et al. (2006, A\&A, 456, 1181); Malcheva et al. (2006, MNRAS, 367, 754) for some lines   
-* Ru II: Johansson et al. 1994, ApJ, 421, 809) for UV lines.
-* Ag I: Hansen et al. (2012, A\&A, 545, 31)                      
-* Cd I: Morton (2000, ApJS, 130, 403)                           
-* Cd II: Roederer & Lawler (2012, ApJ, 750, 76)
-* Ru II: Roederer et al. (2021, in preparation) for one UV line
-* Sb I: Roederer et al. (2021, in preparation) for two UV lines
-* Te I: Roederer et al. (2012, ApJL, 747, L8)                   
-* La II: Lawler et al. (2001, ApJ, 556, 452)                     
-* Ce II: Lawler et al. (2009, ApJS, 182, 51)                     
-* Pr II: Sneden et al. (2009, ApJS, 182, 80)                                                                
-* Nd II: Den Hartog et al. (2003, ApJS, 148, 543) and Roederer et al. (2008, ApJ, 675, 723) for iso & HFS note that the 4314.50 Å line has a solar-derived log(*gf*)
-* Sm II: Lawler et al. (2006, ApJS, 162, 227) and Roederer & Lawler (2012, ApJ, 750, 76)                  
-* Eu II: Lawler et al. (2001, ApJ, 563, 1075)                    
-* Gd II: Den Hartog et al. (2006, ApJS, 167, 292)                
-* Tb II: Lawler et al. (2001, ApJS, 137, 341)                    
-* Dy II: Sneden et al. (2009, ApJS, 182, 80)                     
-* Ho II: Lawler et al. (2004, ApJ, 604, 850)                     
-* Er II: Lawler et al. (2008, ApJS, 178, 71)                     
-* Tm II: Sneden et al. (2009, ApJS, 182, 80)
-* Yb II: Sneden et al. (2009, ApJS, 182, 80); DREAM database (2016A); Kedzierski et al. (2010, Spectrochem Acta B., 65, 248 2126A).
-* Lu II: several HFS sources put together by Ian:  Sneden et al. (2009, ApJS, 182, 80); Roederer et al. (2010, ApJL, 714, L123); Roederer et al. (2012, ApJS, 203, 27); Den Hartog et al. (2020, ApJS, 248, 10. Likewise for $gf$ values there are values from Sneden et al. (2009, ApJS, 182, 80); Roederer et al. (2010, ApJL, 714, L123): Quinet et al. (1999, MNRAS, 307, 934).
-* Ta II:  *gf* values computed by Ian from data in Quinet et al. (2009, A&A, 493, 711), with wavelengths adopted from Kurucz. These were supplemented by some values from Morton (2000, ApJS, 130, 403).
-* W II: Roederer et al. (2021, in preparation) for UV lines.
-* Re II: Roederer et al. (2021, in preparation) for UV lines.
-* Os I: Quinet et al. (2006, A&A, 448, 1207) for *gf* values.
-* Os II: Quinet et al. (2006, A&A, 448, 1207) for *gf* values.
-* Ir II: Ivarsson et al. (2004, A&A, 425, 353) and Xu et al. (2007, JQSRT, 104, 52, values from NIST) for UV lines.
-* Pt I: Den Hartog et al. (2005, ApJ, 619, 639); HFS and isotopic substructure included for many lines.
-* Pt II: Quinet et al. (2008, PRA, 77, 022501) for selected strong UV lines.
-* Au I: Fivet et al. (2006, J. Phys. B: At. Mol. Opt. Phys., 39, 3587) and NIST for strong UV lines.
-* Pb I: Roederer et al. (2012, ApJ, 750, 76).
-* Pb II: Roederer et al. (2020, ApJL, 902, L24) for one UV line.
+* `Ge I`: Li et al. (1999, PRA, 60, 198). These nearly exactly match the ones from Biemont et al (1999, MN RAS, 303, 721), and Biemont is an author on both papers.
+* `As I`: Roederer & Lawler (2012, ApJ, 750, 76); Roederer et al., in preparation) with HFS.
+* `Se I`: Roederer & Lawler (2012, ApJ, 750, 76)                  
+* `Rb I`: NIST                                                    
+* `Sr I`: NIST                                                    
+* `Sr II`: NIST                                                    
+* `Y II`: Hannaford et al. (1982, ApJ, 261, 736) and Biemont et al. (2011, MNRAS, 414, 3350)
+* `Zr II`: Ljung et al. (2006, A\&A, 456, 1181); Malcheva et al. (2006, MNRAS, 367, 754) for some lines   
+* `Ru II`: Johansson et al. 1994, ApJ, 421, 809) for UV lines.
+* `Ag I`: Hansen et al. (2012, A\&A, 545, 31)                      
+* `Cd I`: Morton (2000, ApJS, 130, 403)                           
+* `Cd II`: Roederer & Lawler (2012, ApJ, 750, 76)
+* `Ru II`: Roederer et al. (2021, in preparation) for one UV line
+* `Sb I`: Roederer et al. (2021, in preparation) for two UV lines
+* `Te I`: Roederer et al. (2012, ApJL, 747, L8)                   
+* `La II`: Lawler et al. (2001, ApJ, 556, 452)                     
+* `Ce II`: Lawler et al. (2009, ApJS, 182, 51)                     
+* `Pr II`: Sneden et al. (2009, ApJS, 182, 80)                                                                
+* `Nd II`: Den Hartog et al. (2003, ApJS, 148, 543) and Roederer et al. (2008, ApJ, 675, 723) for iso & HFS note that the 4314.50 Å line has a solar-derived log(*gf*)
+* `Sm II`: Lawler et al. (2006, ApJS, 162, 227) and Roederer & Lawler (2012, ApJ, 750, 76)                  
+* `Eu II`: Lawler et al. (2001, ApJ, 563, 1075)                    
+* `Gd II`: Den Hartog et al. (2006, ApJS, 167, 292)                
+* `Tb II`: Lawler et al. (2001, ApJS, 137, 341)                    
+* `Dy II`: Sneden et al. (2009, ApJS, 182, 80)                     
+* `Ho II`: Lawler et al. (2004, ApJ, 604, 850)                     
+* `Er II`: Lawler et al. (2008, ApJS, 178, 71)                     
+* `Tm II`: Sneden et al. (2009, ApJS, 182, 80)
+* `Yb II`: Sneden et al. (2009, ApJS, 182, 80); DREAM database (2016A); Kedzierski et al. (2010, Spectrochem Acta B., 65, 248 2126A).
+* `Lu II`: several HFS sources put together by Ian:  Sneden et al. (2009, ApJS, 182, 80); Roederer et al. (2010, ApJL, 714, L123); Roederer et al. (2012, ApJS, 203, 27); Den Hartog et al. (2020, ApJS, 248, 10. Likewise for $gf$ values there are values from Sneden et al. (2009, ApJS, 182, 80); Roederer et al. (2010, ApJL, 714, L123): Quinet et al. (1999, MNRAS, 307, 934).
+* `Ta II`:  *gf* values computed by Ian from data in Quinet et al. (2009, A&A, 493, 711), with wavelengths adopted from Kurucz. These were supplemented by some values from Morton (2000, ApJS, 130, 403).
+* `W II`: Roederer et al. (2021, in preparation) for UV lines.
+* `Re II`: Roederer et al. (2021, in preparation) for UV lines.
+* `Os I`: Quinet et al. (2006, A&A, 448, 1207) for *gf* values.
+* `Os II`: Quinet et al. (2006, A&A, 448, 1207) for *gf* values.
+* `Ir II`: Ivarsson et al. (2004, A&A, 425, 353) and Xu et al. (2007, JQSRT, 104, 52, values from NIST) for UV lines.
+* `Pt I`: Den Hartog et al. (2005, ApJ, 619, 639); HFS and isotopic substructure included for many lines.
+* `Pt II`: Quinet et al. (2008, PRA, 77, 022501) for selected strong UV lines.
+* `Au I`: Fivet et al. (2006, J. Phys. B: At. Mol. Opt. Phys., 39, 3587) and NIST for strong UV lines.
+* `Pb I`: Roederer et al. (2012, ApJ, 750, 76).
+* `Pb II`: Roederer et al. (2020, ApJL, 902, L24) for one UV line.
 
 ---
 ### Atomic Species: Other Elements
@@ -100,10 +100,10 @@ There is one `linemake` oddity that we have no interest in addressing for the fo
 * HCl: HITRAN; IR transitions only
 * HF: HITRAN; IR transitions only
 * SiO: Kurucz database; IR transitions only
-* SiH: Kurucz database; in earlier $linemake$ versions SiH was lumped in with the other hydrides but this is unsatisfactory. Now it will be included only if the user desires it. Since the solar isotopic fractions are <sup>28,29,30</sup>Si = 92.22%, 4.69%, and 3.09%, in other words dominated by a single isotope, the solar isotopic fractions are included in the effective $gf$ values of SiH lines.
-* H<sub>2</sub>O:  HITRAN; the whole list has 84K lines, so to limit that a bit we include here only those in the 1-5&mu; m wavelength regime. It would be easy to add optical-region lines if a need arises. Note that the MOOG version from November 2019 has the ability to do triatomic molecules; earlier versions cannot work on H<sub>2</sub>O.
+* SiH: Kurucz database; in earlier $linemake$ versions SiH was lumped in with the other hydrides but this is unsatisfactory. Now it will be included only if the user desires it. Since the solar isotopic fractions are <sup>28,29,30</sup>Si = 92.22%, 4.69%, and 3.09%, in other words dominated by a single isotope, the solar isotopic fractions are included in the effective *gf* values of SiH lines.
+* H<sub>2</sub>O:  HITRAN; the whole list has 84K lines, so to limit that a bit we include here only those in the 1-5&mu;m wavelength regime. It would be easy to add optical-region lines if a need arises. Note that the MOOG version from November 2019 has the ability to do triatomic molecules; earlier versions cannot work on H<sub>2</sub>O.
 * TiO:  HITRAN. This molecule has many electronic-vabrational-rotational band systems, leading to nearly 8 million transitions cataloged in HITRAN. Additionally, Ti has 5 isotopes with substantial contributions to the solar-system Ti elemental abundance. The major isotope is <sup>48</sup>Ti, with 72.73% of the fractional contribution, and <sup>46,47,49,50</sup>Ti isotopes have 8.25%, 7.44%, 5.41%, and 5.18% fractions, respectively.
-   * Briefly we outline our line cut-down procedures here. We define a species-specific relative strength as log(*gf*) - $\theta\chi$, where $\chi$ is the excitation energy in eV, and $\theta$ = 5040/T. We choose $\theta$ = 1.5 (T = 3600K) as a representative very cool stellar temperature. Then for <sup>48</sup>TiO we retained all lines whose strengths were predicted to be >0.1% of the strongest line in a 10 Å wavelength interval, thus cutting out a large number of extremely weak TiO lines. This reduced the original 8 x 10<sup>6</sup> list to about 1.7 x 10<sup>6</sup>, still large but manageable. For the other isotopes we used the same procedure, but cut individual line strengths down by the additional factor of the isotopic ratio with respect to <sup>48</sup>Ti.
+   * Briefly we outline our line cut-down procedures here. We define a species-specific relative strength as log(*gf*) - &theta;&chi;, where &chi; is the excitation energy in eV, and &theta; = 5040/T. We choose &theta; = 1.5 (T = 3600K) as a representative very cool stellar temperature. Then for <sup>48</sup>TiO we retained all lines whose strengths were predicted to be >0.1% of the strongest line in a 10 Å wavelength interval, thus cutting out a large number of extremely weak TiO lines. This reduced the original 8 x 10<sup>6</sup> list to about 1.7 x 10<sup>6</sup>, still large but manageable. For the other isotopes we used the same procedure, but cut individual line strengths down by the additional factor of the isotopic ratio with respect to <sup>48</sup>Ti.
     * In `linemake` for TiO the user has options of including only <sup>48</sup>TiO or adding in the other isotopic lines also. For now we have cut down the * gf* 's of the minor isotopic lines by their solar-system abundance ratios. This may be revisited in the future it is not satisfactory to users.
-* FeH: There appear to be two sources for FeH line data that can be used in synthesis lists. First, the Kuruz website (http://kurucz.harvard.edu/molecules/feh/) has lines from Dulick et al. (2003, ApJ, 594, 651). These were translated into MOOG style in a straightforward manner. Second, Hargreaves et al. (2010, AJ, 140, 919) studied a different FeH electronic band system, creating a list of about 6300 lines with wavelengths, measured intensities, and excitation energies. For a small subset of about 260 lines they computed transition probabilities. We combined the Kurucz/Dulick and Hargreaves lines. After examining the relative strengths of the total FeH line list, we elected to eliminate those lines that were ≃10<sup>-7</sup> weaker than the maximum FeH line strengths. Fe exists predominantly as <sup>56</sup>Fe (91.7%) and the minor isotopes have not gotten much attention, so they were ignored. The data sources tabulate FeH lines from \~ 6200 Å to far into the IR, but there are relatively few lines beyond 5\mu, and we ignored them.
+* FeH: There appear to be two sources for FeH line data that can be used in synthesis lists. First, the Kuruz website (http://kurucz.harvard.edu/molecules/feh/) has lines from Dulick et al. (2003, ApJ, 594, 651). These were translated into MOOG style in a straightforward manner. Second, Hargreaves et al. (2010, AJ, 140, 919) studied a different FeH electronic band system, creating a list of about 6300 lines with wavelengths, measured intensities, and excitation energies. For a small subset of about 260 lines they computed transition probabilities. We combined the Kurucz/Dulick and Hargreaves lines. After examining the relative strengths of the total FeH line list, we elected to eliminate those lines that were ≃10<sup>-7</sup> weaker than the maximum FeH line strengths. Fe exists predominantly as <sup>56</sup>Fe (91.7%) and the minor isotopes have not gotten much attention, so they were ignored. The data sources tabulate FeH lines from \~ 6200 Å to far into the IR, but there are relatively few lines beyond 5&mu;, and we ignored them.
 * MgO: probably in the near future; ExoMol
