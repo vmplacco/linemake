@@ -15,8 +15,8 @@ There is one `linemake` oddity that we have no interest in addressing for the fo
 ---
 ### Atomic Species: Fe-group Elements
 
-* `Sc I`: Lawler et al. (2019, ApJS, 241, 21); includes HFS
-* `Sc II`: Lawler et al. (2019, ApJS, 241, 21); includes HFS
+* `Sc I`: [Lawler et al. (2019, ApJS, 241, 21)](https://ui.adsabs.harvard.edu/abs/2019ApJS..241...21L/); includes HFS
+* `Sc II`: [Lawler et al. (2019, ApJS, 241, 21)](https://ui.adsabs.harvard.edu/abs/2019ApJS..241...21L/); includes HFS
 * `Ti I`: Lawler et al. (2013, ApJS, 205, 11)
 * `Ti II`: Wood et al. (2013, ApJS, 208, 27)
 * `V I`: Lawler et al. (2014, ApjS, 215, 20) and Wood et al. (2018, ApJS, 234, 25). Holmes, C. E. et al. 2016, ApJS, 224, 35 suggested some problems with the Lawler et al. transition probabilities in the wavelength range >9000 Å, but Wood et al. showed that the Lawler et al. *gf*'s are correct;  Wood et al. also has extensive new HFS data.
