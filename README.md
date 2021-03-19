@@ -14,7 +14,7 @@ The choices of which lines of which species to include in `linemake` have often 
 
 ## Compiling the code and known idiosyncrasies
 
-First, edit the `linemake.f` at the start of the program, to point the code to its species linelists `linepath='\$PATHTO/mooglists'`. Then, compile the code:
+First, edit the `linemake.f` at the start of the program, to point the code to its species linelists `linepath='/pathto/mooglists'`. Then, compile the code:
 
     gfortran linemake.f -o linemake.go
 
