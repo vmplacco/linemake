@@ -82,7 +82,7 @@ Species|References & Notes
 `Ho II`| Lawler et al. (2004, ApJ, 604, 850)                     
 `Er II`| Lawler et al. (2008, ApJS, 178, 71)                     
 `Tm II`| Sneden et al. (2009, ApJS, 182, 80)
-`Yb II`| Sneden et al. (2009, ApJS, 182, 80); DREAM database (2016A); Kedzierski et al. (2010, Spectrochem Acta B., 65, 248 2126A)
+`Yb II`| Sneden et al. (2009, ApJS, 182, 80); [DREAM database](https://hosting.umons.ac.be/html/agif/databases/dream.html) (2016A); Kedzierski et al. (2010, Spectrochem Acta B., 65, 248 2126A)
 `Lu II`| Several HFS sources put together by Ian:  Sneden et al. (2009, ApJS, 182, 80); Roederer et al. (2010, ApJL, 714, L123); Roederer et al. (2012, ApJS, 203, 27); Den Hartog et al. (2020, ApJS, 248, 10. Likewise for *gf* values there are values from Sneden et al. (2009, ApJS, 182, 80); Roederer et al. (2010, ApJL, 714, L123): Quinet et al. (1999, MNRAS, 307, 934)
 `Ta II`|  *gf* values computed by Ian from data in Quinet et al. (2009, A&A, 493, 711), with wavelengths adopted from [Kurucz](http://kurucz.harvard.edu/atoms.html). These were supplemented by some values from Morton (2000, ApJS, 130, 403)
 `W II`| Roederer et al. (2021, in preparation) for UV lines
@@ -102,7 +102,7 @@ Species|References & Notes
 Species|References & Notes
 -------|-----
 `Li I`| Resonance line. Nothing special needs to be done here to get the full isotopic and hyperfine substructure. The total *gf* from [Kurucz](http://kurucz.harvard.edu/atoms.html), has been adopted; it is close to that recommended by [NIST](https://www.nist.gov/pml/atomic-spectra-database)
-`Al II`|  Roederer & Lawler (2021, in preparation). This is the HFS for one UV resonance line
+`Al II`| Roederer & Lawler (2021, in preparation). This is the HFS for one UV resonance line
 `Ca I`| Den Hartog et al. (2021, ApJS, submitted). This is a combined lab and theoretical study, and the included transitions have transition probabilities now with very small uncertainties
 `Ca II`| Den Hartog et al. (2021, ApJS, submitted). No new lab data here, but Ca II is a well-studied single electron species
 
