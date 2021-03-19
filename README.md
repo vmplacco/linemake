@@ -27,7 +27,7 @@ In succeeding sections we discuss first atomic and then molecular data sources. 
 ---
 ### Atomic Species: Fe-group Elements
 
-Species|Notes
+Species|References & Notes
 -------|-----
 `Sc I` | [Lawler et al. (2019, ApJS, 241, 21)](https://ui.adsabs.harvard.edu/abs/2019ApJS..241...21L/); includes HFS
 `Sc II`| [Lawler et al. (2019, ApJS, 241, 21)](https://ui.adsabs.harvard.edu/abs/2019ApJS..241...21L/); includes HFS
@@ -53,7 +53,7 @@ Species|Notes
 ---
 ### Atomic Species: Neutron-Capture Elements
 
-Species|Notes
+Species|References & Notes
 -------|-----
 `Ge I`| Li et al. (1999, PRA, 60, 198). These nearly exactly match the ones from Biemont et al (1999, MN RAS, 303, 721), and Biemont is an author on both papers
 `As I`| Roederer & Lawler (2012, ApJ, 750, 76); Roederer et al., in preparation) with HFS
@@ -99,7 +99,7 @@ Species|Notes
 ---
 ### Atomic Species: Other Elements
 
-Species|Notes
+Species|References & Notes
 -------|-----
 `Li I`| Resonance line. Nothing special needs to be done here to get the full isotopic and hyperfine substructure. The total *gf* from [Kurucz](http://kurucz.harvard.edu/atoms.html), has been adopted; it is close to that recommended by [NIST](https://www.nist.gov/pml/atomic-spectra-database)
 `Al II`|  Roederer & Lawler (2021, in preparation). This is the HFS for one UV resonance line
@@ -109,7 +109,7 @@ Species|Notes
 ---
 ### Molecular (mostly diatomic) Species
 
-Species|Notes
+Species|References & Notes
 -------|-----
 `MgH`| Hinkle et al. (2013, ApJS, 207, 26)
 <code>C<sub>2</sub></code> | Swan bands.  Ram et al. (2014, ApJS, 211, 5); note that 0.089eV has been added to all of the excitation energies to account for the fact that the lower level of the Swan system is not exactly at the lowest possible vibrational state.                                              
