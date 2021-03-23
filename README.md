@@ -4,7 +4,7 @@
 
 `linemake` is an open-source atomic and molecular line list generator. Rather than a replacement for a number of well-established atomic and molecular spectral databases, `linemake` aims to be a lightweight, easy-to-use tool to generate formatted and curated lists suitable for spectral synthesis work. We stress that the users of should be *in charge* of all of their transition data, and should cite the appropriate sources in their published work, given below.
 
-## Acknowledgements and citations
+## Citating `linemake` in your published work
 
 If you use `linemake` in your work, please cite the presentation paper (TBD), this github repository, and the relevant articles listed below.
 
@@ -20,7 +20,7 @@ First, edit the `linemake.f` at the start of the program, to point the code to i
 
 There is one `linemake` oddity that we have no interest in addressing for the foreseeable future. The code will refuse to work (and will say so) when the requested beginning and ending wavelengths bridge the divide between two files of atomic line data, each of which covers 1000Å. As a result, if you have a desired line list from, e.g., 5990Å to 6010Å, the code would crash without the built-in exit. The simple work-around is to run the code twice, in the example case from 5990Å to 5999.999Å, and from 6000Å to 6010Å.
 
-## Description of the database
+## Description of the database and 
 
 In succeeding sections we discuss first atomic and then molecular data sources. The Fe-group atomic species are considered first, followed by neutron-capture species, and finally a few other elements. The molecular species then are discussed in a bit more detail, because of the decisions needed to maximize the utility of their line lists for high-resolution spectroscopic studies.
 
@@ -125,3 +125,9 @@ Species|References & Notes
 `TiO`|  [HITRAN](https://hitran.org/lbl/). This molecule has many electronic-vabrational-rotational band systems, leading to nearly 8 million transitions cataloged in HITRAN. Additionally, Ti has 5 isotopes with substantial contributions to the solar-system Ti elemental abundance. The major isotope is <sup>48</sup>Ti, with 72.73% of the fractional contribution, and <sup>46,47,49,50</sup>Ti isotopes have 8.25%, 7.44%, 5.41%, and 5.18% fractions, respectively. Briefly we outline our line cut-down procedures here. We define a species-specific relative strength as log(*gf*) - &theta;&chi;, where &chi; is the excitation energy in eV, and &theta; = 5040/T. We choose &theta; = 1.5 (T = 3600K) as a representative very cool stellar temperature. Then for <sup>48</sup>TiO we retained all lines whose strengths were predicted to be >0.1% of the strongest line in a 10 Å wavelength interval, thus cutting out a large number of extremely weak TiO lines. This reduced the original 8 x 10<sup>6</sup> list to about 1.7 x 10<sup>6</sup>, still large but manageable. For the other isotopes we used the same procedure, but cut individual line strengths down by the additional factor of the isotopic ratio with respect to <sup>48</sup>Ti. In `linemake` for TiO the user has options of including only <sup>48</sup>TiO or adding in the other isotopic lines also. For now we have cut down the *gf*'s of the minor isotopic lines by their solar-system abundance ratios. This may be revisited in the future it is not satisfactory to users
 `FeH`| There appear to be two sources for FeH line data that can be used in synthesis lists. First, the [Kuruz website](http://kurucz.harvard.edu/molecules/feh/) has lines from Dulick et al. (2003, ApJ, 594, 651). These were translated into [MOOG](https://www.as.utexas.edu/~chris/moog.html) style in a straightforward manner. Second, Hargreaves et al. (2010, AJ, 140, 919) studied a different `FeH` electronic band system, creating a list of about 6300 lines with wavelengths, measured intensities, and excitation energies. For a small subset of about 260 lines they computed transition probabilities. We combined the Kurucz/Dulick and Hargreaves lines. After examining the relative strengths of the total FeH line list, we elected to eliminate those lines that were ≃10<sup>-7</sup> weaker than the maximum FeH line strengths. Fe exists predominantly as <sup>56</sup>Fe (91.7%) and the minor isotopes have not gotten much attention, so they were ignored. The data sources tabulate `FeH` lines from \~ 6200 Å to far into the IR, but there are relatively few lines beyond 5&mu;, and we ignored them
 `MgO`| Probably in the near future from [ExoMol](http://www.exomol.com/data/molecules/)
+
+## Author acknowledgements
+
+* The work of V.M.P. is supported by NOIRLab, which is managed by the Association of Universities for Research in Astronomy (AURA) under a cooperative agreement with the National Science Foundation (NSF).
+
+* I.U.R. acknowledges financial support from NASA (HST-GO-12268, HST-GO-12976, HST-AR-13246, HST-AR-13879, HST-AR-13884, HST-GO-14151, HST-GO-14231, HST-GO-14232, HST-GO-14765, HST-AR-15051, HST-GO-15657) and NSF (AST-1815403).
