@@ -59,7 +59,7 @@ Species|References & Notes
 
 Species|References & Notes
 -------|-----
-`Ge I`| Li et al. (1999, PRA, 60, 198). These nearly exactly match the ones from Biemont et al (1999, MN RAS, 303, 721), and Biemont is an author on both papers
+`Ge I`| [Li et al. (1999, PRA, 60, 198)](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.60.198). These nearly exactly match the ones from [Biemont et al (1999, MNRAS, 303, 721)](https://ui.adsabs.harvard.edu/abs/1999MNRAS.303..721B), and Biemont is an author on both papers
 `As I`| Roederer & Lawler (2012, ApJ, 750, 76); Roederer et al., in preparation) with HFS
 `Se I`| Roederer & Lawler (2012, ApJ, 750, 76)                  
 `Rb I`| [NIST](https://www.nist.gov/pml/atomic-spectra-database)                                                    
