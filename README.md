@@ -23,7 +23,6 @@ There is one `linemake` oddity that we have no interest in addressing for the fo
 ## Description of the database and current status
 
 ![](http://vmplacco.github.io/files/linemake_ptable.svg)
-<embed type="text/html" src="linemake.html" width="1000" height="600"></embed>
 
 In succeeding sections we discuss first atomic and then molecular data sources. The Fe-group atomic species are considered first, followed by neutron-capture species, and finally a few other elements. The molecular species then are discussed in a bit more detail, because of the decisions needed to maximize the utility of their line lists for high-resolution spectroscopic studies.
 
