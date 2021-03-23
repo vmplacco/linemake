@@ -22,9 +22,9 @@ There is one `linemake` oddity that we have no interest in addressing for the fo
 
 ## Description of the database and current status
 
-![](http://vmplacco.github.io/files/linemake_ptable.svg)
+The periodic table below shows the current transitions available in `linemake`. Click ![here](http://vmplacco.github.io/files/linemake_ptable.html) for an interactive version. 
 
-![](linemake1.js)
+![](http://vmplacco.github.io/files/linemake_ptable.svg)
 
 In succeeding sections we discuss first atomic and then molecular data sources. The Fe-group atomic species are considered first, followed by neutron-capture species, and finally a few other elements. The molecular species then are discussed in a bit more detail, because of the decisions needed to maximize the utility of their line lists for high-resolution spectroscopic studies.
 
