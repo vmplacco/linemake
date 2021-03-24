@@ -130,7 +130,7 @@ Species|References & Notes
 `FeH`| There appear to be two sources for FeH line data that can be used in synthesis lists. First, the [Kuruz website](http://kurucz.harvard.edu/molecules/feh/) has lines from Dulick et al. (2003, ApJ, 594, 651). These were translated into [MOOG](https://www.as.utexas.edu/~chris/moog.html) style in a straightforward manner. Second, Hargreaves et al. (2010, AJ, 140, 919) studied a different `FeH` electronic band system, creating a list of about 6300 lines with wavelengths, measured intensities, and excitation energies. For a small subset of about 260 lines they computed transition probabilities. We combined the Kurucz/Dulick and Hargreaves lines. After examining the relative strengths of the total FeH line list, we elected to eliminate those lines that were ≃10<sup>-7</sup> weaker than the maximum FeH line strengths. Fe exists predominantly as <sup>56</sup>Fe (91.7%) and the minor isotopes have not gotten much attention, so they were ignored. The data sources tabulate `FeH` lines from \~ 6200 Å to far into the IR, but there are relatively few lines beyond 5&mu;, and we ignored them
 `MgO`| Probably in the near future from [ExoMol](http://www.exomol.com/data/molecules/)
 
-## Author acknowledgements
+## Acknowledgements
 
 * The work of V.M.P. is supported by NOIRLab, which is managed by the Association of Universities for Research in Astronomy (AURA) under a cooperative agreement with the National Science Foundation (NSF).
 
