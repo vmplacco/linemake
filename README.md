@@ -76,7 +76,7 @@ Species|References & Notes
 `La II`| [Lawler et al. (2001, ApJ, 556, 452)](https://ui.adsabs.harvard.edu/abs/2001ApJ...556..452L)
 `Ce II`| [Lawler et al. (2009, ApJS, 182, 51)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...51L)
 `Pr II`| [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S)
-`Nd II`| [Den Hartog et al. (2003, ApJS, 148, 543)](https://ui.adsabs.harvard.edu/abs/2003ApJS..148..543D) and Roederer et al. (2008, ApJ, 675, 723) for ISO & HFS. Note that the 4314.50Å line has a solar-derived log(*gf*)
+`Nd II`| [Den Hartog et al. (2003, ApJS, 148, 543)](https://ui.adsabs.harvard.edu/abs/2003ApJS..148..543D) and [Roederer et al. (2008, ApJ, 675, 723)](https://ui.adsabs.harvard.edu/abs/2008ApJ...675..723R) for ISO & HFS. Note that the 4314.50Å line has a solar-derived log(*gf*)
 `Sm II`| [Lawler et al. (2006, ApJS, 162, 227)](https://ui.adsabs.harvard.edu/abs/2006ApJS..162..227L) and [Roederer & Lawler (2012, ApJ, 750, 76)](https://ui.adsabs.harvard.edu/abs/2012ApJ...750...76R)
 `Eu II`| [Lawler et al. (2001, ApJ, 563, 1075)](https://ui.adsabs.harvard.edu/abs/2001ApJ...563.1075L)
 `Gd II`| [Den Hartog et al. (2006, ApJS, 167, 292)](https://ui.adsabs.harvard.edu/abs/2006ApJS..167..292D)
@@ -85,14 +85,14 @@ Species|References & Notes
 `Ho II`| [Lawler et al. (2004, ApJ, 604, 850)](https://ui.adsabs.harvard.edu/abs/2004ApJ...604..850L)
 `Er II`| [Lawler et al. (2008, ApJS, 178, 71)](https://ui.adsabs.harvard.edu/abs/2008ApJS..178...71L)
 `Tm II`| [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S)
-`Yb II`| [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S); [DREAM database](https://hosting.umons.ac.be/html/agif/databases/dream.html) (2016A); Kedzierski et al. (2010, Spectrochem Acta B., 65, 248 2126A)
-`Lu II`| Several HFS sources put together by Ian:  [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S); Roederer et al. (2010, ApJL, 714, L123); Roederer et al. (2012, ApJS, 203, 27); Den Hartog et al. (2020, ApJS, 248, 10. Likewise for *gf* values there are values from Sneden et al. (2009, ApJS, 182, 80); Roederer et al. (2010, ApJL, 714, L123): Quinet et al. (1999, MNRAS, 307, 934)
-`Ta II`|  *gf* values computed by Ian from data in Quinet et al. (2009, A&A, 493, 711), with wavelengths adopted from [Kurucz](http://kurucz.harvard.edu/atoms.html). These were supplemented by some values from Morton (2000, ApJS, 130, 403)
+`Yb II`| [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S); [DREAM database](https://hosting.umons.ac.be/html/agif/databases/dream.html) (2016A); [Kedzierski et al. (2010, Spectrochimica Acta B, 65, 248)](https://www.sciencedirect.com/science/article/abs/pii/S0584854710000522)
+`Lu II`| Several HFS sources put together by Ian:  [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S); [Roederer et al. (2010, ApJL, 714, L123)](https://ui.adsabs.harvard.edu/abs/2010ApJ...714L.123R); [Roederer et al. (2012, ApJS, 203, 27)](https://ui.adsabs.harvard.edu/abs/2012ApJS..203...27R); Den Hartog et al. (2020, ApJS, 248, 10. Likewise for *gf* values there are values from [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S); [Roederer et al. (2010, ApJL, 714, L123)](https://ui.adsabs.harvard.edu/abs/2010ApJ...714L.123R): [Quinet et al. (1999, MNRAS, 307, 934)](https://ui.adsabs.harvard.edu/abs/1999MNRAS.307..934Q)
+`Ta II`|  *gf* values computed by Ian from data in [Quinet et al. (2009, A&A, 493, 711)](https://ui.adsabs.harvard.edu/abs/2009A%26A...493..711Q), with wavelengths adopted from [Kurucz](http://kurucz.harvard.edu/atoms.html). These were supplemented by some values from Morton (2000, ApJS, 130, 403)
 `W II`| Roederer et al. (2021, in preparation) for UV lines
 `Re II`| Roederer et al. (2021, in preparation) for UV lines
 `Os I`| [Quinet et al. (2006, A&A, 448, 1207)](https://ui.adsabs.harvard.edu/abs/2006A%26A...448.1207Q) for *gf* values
 `Os II`| [Quinet et al. (2006, A&A, 448, 1207)](https://ui.adsabs.harvard.edu/abs/2006A%26A...448.1207Q) for *gf* values
-`Ir II`| [Ivarsson et al. (2004, A&A, 425, 353)](https://ui.adsabs.harvard.edu/abs/2004A%26A...425..353I) and [Xu et al. (2007, JQSRT, 104, 52]](https://www.sciencedirect.com/science/article/abs/pii/S0022407306002172?via%3Dihub) - values from NIST, for UV lines
+`Ir II`| [Ivarsson et al. (2004, A&A, 425, 353)](https://ui.adsabs.harvard.edu/abs/2004A%26A...425..353I) and [Xu et al. (2007, JQSRT, 104, 52](https://www.sciencedirect.com/science/article/abs/pii/S0022407306002172?via%3Dihub) - values from NIST, for UV lines
 `Pt I`| [Den Hartog et al. (2005, ApJ, 619, 639)](https://ui.adsabs.harvard.edu/abs/2005ApJ...619..639D); HFS and isotopic substructure included for many lines
 `Pt II`| [Quinet et al. (2008, PRA, 77, 022501)](https://portal.research.lu.se/portal/en/publications/laserinducedfluorescence-lifetime-measurements-and-relativistic-hartreefock-oscillator-strength-calculations-in-singly-ionized-platinum(76f6fe83-0510-4a79-ba1c-10a6b7a72672).html) for selected strong UV lines
 `Au I`| [Fivet et al. (2006, J. Phys. B: At. Mol. Opt. Phys., 39, 3587)](https://iopscience.iop.org/article/10.1088/0953-4075/39/17/015) and [NIST](https://www.nist.gov/pml/atomic-spectra-database) for strong UV lines
