@@ -22,7 +22,7 @@ There is one `linemake` oddity that we have no interest in addressing for the fo
 
 ## Description of the database and current status
 
-The periodic table below shows the current transitions available in `linemake`. Click [here](http://vmplacco.github.io/files/linemake_ptable.html) for an interactive version. 
+The periodic table below shows a summary of the current transitions available in the `linemake` database. Click [here](http://vmplacco.github.io/files/linemake_ptable.html) for an interactive version. 
 
 ![http://vmplacco.github.io/files/linemake_ptable.html](http://vmplacco.github.io/files/linemake_ptable.svg)
 
