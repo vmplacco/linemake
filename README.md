@@ -71,6 +71,7 @@ Species|References & Notes
 `Ag I`| [Hansen et al. (2012, A&A, 545, 31)](https://ui.adsabs.harvard.edu/abs/2012A%26A...545A..31H)                      
 `Cd I`| [Morton (2000, ApJS, 130, 403)](https://ui.adsabs.harvard.edu/abs/2000ApJS..130..403M)
 `Cd II`| [Roederer & Lawler (2012, ApJ, 750, 76)](https://ui.adsabs.harvard.edu/abs/2012ApJ...750...76R)
+`In II`| In Added new HFS+IS for 1 UV line (Roederer et al. 2021, in prep).  The log(*gf*) value is from [Curtis et al. (2000, PRA, 62, 052513)](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.62.052513).  The HFS is from new calculations based on [Larkin & Hannaford (1993, Z. Phys. D., 27, 313)](https://ui.adsabs.harvard.edu/abs/1993ZPhyD..27..313L).  The IS is from [Wang et al. (2007, Euro. Phys. J. D, 44, 307)](https://link.springer.com/article/10.1140/epjd/e2007-00171-0)
 `Sb I`| Roederer et al. (2021, in preparation) for two UV lines
 `Te I`| [Roederer et al. (2012, ApJL, 747, L8)](https://ui.adsabs.harvard.edu/abs/2012ApJ...747L...8R)
 `La II`| [Lawler et al. (2001, ApJ, 556, 452)](https://ui.adsabs.harvard.edu/abs/2001ApJ...556..452L)
