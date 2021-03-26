@@ -4,7 +4,7 @@
 
 `linemake` is an open-source atomic and molecular line list generator. Rather than a replacement for a number of well-established atomic and molecular spectral databases, `linemake` aims to be a lightweight, easy-to-use tool to generate formatted and curated lists suitable for spectral synthesis work. We stress that the users of should be *in charge* of all of their transition data, and should cite the appropriate sources in their published work, given below.
 
-## Authors and Contributors
+## Contributors
 
 * Chris Sneden - Department of Astronomy and McDonald Observatory, The University of Texas, Austin, TX
 * [Vini Placco](http://vmplacco.github.io/) - Community Science and Data Center/NSF’s NOIRLab, Tucson, AZ
