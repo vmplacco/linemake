@@ -7,7 +7,7 @@
 ## Authors 
 
 * Chris Sneden - Department of Astronomy and McDonald Observatory, The University of Texas, Austin, TX
-* Vini Placco - Community Science and Data Center/NSF’s NOIRLab, Tucson, AZ
+* [Vini Placco](http://vmplacco.github.io/) - Community Science and Data Center/NSF’s NOIRLab, Tucson, AZ
 * Ian Roederer - Department of Astronomy, University of Michigan, Ann Arbor, MI
 
 ## Citing `linemake` in your published work
