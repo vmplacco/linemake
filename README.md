@@ -13,7 +13,7 @@
 * Elizabeth A. Den Hartog - Department of Physics, University of Wisconsin-Madison, Madison, WI
 * Neda Hejazi - Department of Physics and Astronomy, Georgia State University, Atlanta, GA
 * Zachary Maas - Department of Astronomy and McDonald Observatory, The University of Texas, Austin, TX
-<!-- * Peter Bernath - Department of Physics and Department of Chemistry and Biochemistry, Old Dominion University, Norfolk, VA -->
+* Peter Bernath - Department of Physics and Department of Chemistry and Biochemistry, Old Dominion University, Norfolk, VA
 
 
 ## Citing `linemake` in your published work
