@@ -30,7 +30,7 @@ First, edit the [`linemake.f`](linemake.f) file (line 34) at the start of the pr
 
     gfortran linemake.f -o linemake.go
 
-There is one `linemake` oddity that we have no interest in addressing for the foreseeable future. The code will refuse to work (and will say so) when the requested beginning and ending wavelengths bridge the divide between two files of atomic line data, each of which covers 1000 Å. As a result, if you have a desired line list from, e.g., 5990 Å to 601 0Å, the code would crash without the built-in exit. The simple work-around is to run the code twice, in the example case from 5990 Å to 5999.999 Å, and from 6000 Å to 6010 Å.
+There is one `linemake` oddity that we have no interest in addressing for the foreseeable future. The code will refuse to work (and will say so) when the requested beginning and ending wavelengths bridge the divide between two files of atomic line data, each of which covers 1000 Å. As a result, if you have a desired line list from, e.g., 5990 Å to 6010 Å, the code would crash without the built-in exit. The simple work-around is to run the code twice, in the example case from 5990 Å to 5999.999 Å, and from 6000 Å to 6010 Å.
 
 ## Description of the database and current status
 
