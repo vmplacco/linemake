@@ -106,7 +106,6 @@ Species|References & Notes
 `Re II`| Roederer et al. (2021, in preparation) for UV lines
 `Os I`| [Quinet et al. (2006, A&A, 448, 1207)](https://ui.adsabs.harvard.edu/abs/2006A%26A...448.1207Q) for *gf* values
 `Os II`| [Quinet et al. (2006, A&A, 448, 1207)](https://ui.adsabs.harvard.edu/abs/2006A%26A...448.1207Q) for *gf* values
-
 `Ir I`| [Xu et al. (2007, JQSRT, 104, 52)](https://www.sciencedirect.com/science/article/abs/pii/S0022407306002172?via%3Dihub); including HFS/IS from [Cowan et al. (2005, ApJ, 627, 238)](https://ui.adsabs.harvard.edu/abs/2005ApJ...627..238C)
 `Ir II`| [Ivarsson et al. (2004, A&A, 425, 353)](https://ui.adsabs.harvard.edu/abs/2004A%26A...425..353I), supplemented with a few lines from [Xu et al. (2007, JQSRT, 104, 52)](https://www.sciencedirect.com/science/article/abs/pii/S0022407306002172?via%3Dihub) - values taken via [NIST](https://www.nist.gov/pml/atomic-spectra-database)
 `Pt I`| [Den Hartog et al. (2005, ApJ, 619, 639)](https://ui.adsabs.harvard.edu/abs/2005ApJ...619..639D); HFS and isotopic substructure included for many lines
