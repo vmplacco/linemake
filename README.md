@@ -79,6 +79,7 @@ Species|References & Notes
 `Sr II`| [NIST](https://www.nist.gov/pml/atomic-spectra-database)
 `Y II`| [Hannaford et al. (1982, ApJ, 261, 736)](https://ui.adsabs.harvard.edu/abs/1982ApJ...261..736H) and [Biémont et al. (2011, MNRAS, 414, 3350)](https://ui.adsabs.harvard.edu/abs/2011MNRAS.414.3350B)
 `Zr II`| [Ljung et al. (2006, A&A, 456, 1181)](https://ui.adsabs.harvard.edu/abs/2006A%26A...456.1181L); [Malcheva et al. (2006, MNRAS, 367, 754)](https://ui.adsabs.harvard.edu/abs/2006MNRAS.367..754M) for some lines   
+`Nb II`| [Nilsson et al. (2010, A&A, 511, A16)](https://ui.adsabs.harvard.edu/abs/2010A%26A...511A..16N); including HFS
 `Ru II`| [Johansson et al. 1994, ApJ, 421, 809)](https://ui.adsabs.harvard.edu/abs/1994ApJ...421..809J) for UV lines
 `Ag I`| [Hansen et al. (2012, A&A, 545, 31)](https://ui.adsabs.harvard.edu/abs/2012A%26A...545A..31H)                      
 `Cd I`| [Morton (2000, ApJS, 130, 403)](https://ui.adsabs.harvard.edu/abs/2000ApJS..130..403M)
@@ -105,12 +106,16 @@ Species|References & Notes
 `Re II`| Roederer et al. (2021, in preparation) for UV lines
 `Os I`| [Quinet et al. (2006, A&A, 448, 1207)](https://ui.adsabs.harvard.edu/abs/2006A%26A...448.1207Q) for *gf* values
 `Os II`| [Quinet et al. (2006, A&A, 448, 1207)](https://ui.adsabs.harvard.edu/abs/2006A%26A...448.1207Q) for *gf* values
-`Ir II`| [Ivarsson et al. (2004, A&A, 425, 353)](https://ui.adsabs.harvard.edu/abs/2004A%26A...425..353I) and [Xu et al. (2007, JQSRT, 104, 52)](https://www.sciencedirect.com/science/article/abs/pii/S0022407306002172?via%3Dihub); including HFS/IS from [Cowan et al. (2005, ApJ, 627, 238)](https://ui.adsabs.harvard.edu/abs/2005ApJ...627..238C) - values from NIST, for UV lines
+
+`Ir I`| [Xu et al. (2007, JQSRT, 104, 52)](https://www.sciencedirect.com/science/article/abs/pii/S0022407306002172?via%3Dihub); including HFS/IS from [Cowan et al. (2005, ApJ, 627, 238)](https://ui.adsabs.harvard.edu/abs/2005ApJ...627..238C)
+`Ir II`| [Ivarsson et al. (2004, A&A, 425, 353)](https://ui.adsabs.harvard.edu/abs/2004A%26A...425..353I), supplemented with a few lines from [Xu et al. (2007, JQSRT, 104, 52)](https://www.sciencedirect.com/science/article/abs/pii/S0022407306002172?via%3Dihub) - values taken via [NIST](https://www.nist.gov/pml/atomic-spectra-database)
 `Pt I`| [Den Hartog et al. (2005, ApJ, 619, 639)](https://ui.adsabs.harvard.edu/abs/2005ApJ...619..639D); HFS and isotopic substructure included for many lines
 `Pt II`| [Quinet et al. (2008, PRA, 77, 022501)](https://portal.research.lu.se/portal/en/publications/laserinducedfluorescence-lifetime-measurements-and-relativistic-hartreefock-oscillator-strength-calculations-in-singly-ionized-platinum(76f6fe83-0510-4a79-ba1c-10a6b7a72672).html) for selected strong UV lines
 `Au I`| [Fivet et al. (2006, J. Phys. B: At. Mol. Opt. Phys., 39, 3587)](https://iopscience.iop.org/article/10.1088/0953-4075/39/17/015) and [NIST](https://www.nist.gov/pml/atomic-spectra-database) for strong UV lines
 `Pb I`| [Roederer & Lawler (2012, ApJ, 750, 76)](https://ui.adsabs.harvard.edu/abs/2012ApJ...750...76R)
 `Pb II`| [Roederer et al. (2020, ApJL, 902, L24)](https://ui.adsabs.harvard.edu/abs/2020ApJ...902L..24R) for one UV line
+`Th II`| [Nilsson et al. (2002, A&A, 382, 368)](https://ui.adsabs.harvard.edu/abs/2002A%26A...382..368N)
+`U II`| [Nilsson et al. (2002, A&A, 381, 1090)](https://ui.adsabs.harvard.edu/abs/2002A%26A...381.1090N)
 
 ---
 ### Atomic Species: Other Elements
