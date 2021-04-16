@@ -18,7 +18,9 @@
 
 ## Citing `linemake` in your published work
 
-If you use `linemake` in your work, please cite the presentation paper (TBD), this github repository, and the relevant articles listed below.
+If you use `linemake` in your work, please cite the presentation paper [Placco et al. (2021, Res. Notes AAS, 5, 92)](https://iopscience.iop.org/article/10.3847/2515-5172/abf651), this github repository, and the relevant articles listed below.
+
+    ... using \texttt{linemake}\footnote{\href{https://github.com/vmplacco/linemake}{https://github.com/vmplacco/linemake}} \citep{placco2021rn}".
 
 ## Disclaimer
 
