@@ -1,10 +1,12 @@
-cat scII.moog tiI.moog tiII.moog vI.moog vII.moog crI.moog crII.moog \
-    feI.moog feII.moog coI.moog coII.moog niI.moog znI.moog znII.moog \
-    asI.moog seI.moog rbI.moog srI.moog srII.moog yII.moog zrII.moog \
-    cdI.moog cdII.moog teI.moog \
-    laII.moog ceII.moog ceII.cullbie \
-    prII.moog ndII.moog smII.moog euII.moog gdII.moog tbII.moog \
-    dyII.moog erII.moog tmII.moog luII.moog hfII.moog ptI.moog \
+cat caI.moog caII.moog scII.moog tiI.moog tiII.moog vI.moog vII.moog \
+    crI.moog crII.moog feI.moog feII.moog coI.moog coII.moog niI.moog \
+    cuII.moog znI.moog znII.moog \
+    geI.moog seI.moog rbI.moog srI.moog srII.moog yII.moog zrII.moog \
+    nbII.moog ruII.moog cdI.moog cdII.moog teI.moog \
+    laII.moog ceII.moog ceII.cullbie prII.moog ndII.moog smII.moog \
+    euII.moog gdII.moog tbII.moog dyII.moog erII.moog tmII.moog \
+    luII.moog hfII.moog taII.moog osI.moog osII.moog irII.moog ptI.moog \
+    ptII.moog auI.moog thII.moog uII.moog \
     > temp ; \
 sort -bn -o goodgf -k 1 temp ;\
 \rm temp 
