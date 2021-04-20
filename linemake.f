@@ -15,8 +15,8 @@ c     the ones found in an input line list
      .       texti, textg, textgin, textkin,
      .       testchars, textx,
      .       choice
-      real*8 wavei(1000000), idi(1000000), epi(1000000), loggfi(1000000),
-     .       wavex(1000000), idx(1000000), epx(1000000), loggfx(1000000),
+      real*8 wavei(1000000),idi(1000000),epi(1000000),loggfi(1000000),
+     .       wavex(1000000),idx(1000000),epx(1000000),loggfx(1000000),
      .       strengthx(1000000),
      .       waveg(80000), idg(80000), epg(80000), loggfg(80000),
      .       wavegin, idgin, epgin, loggfgin,
@@ -117,7 +117,7 @@ c*****wavelengths
       noutunit = 8
       open (noutunit,file='outsort')
       write (noutunit,1013) wavelo, wavehi
-      do i=1,100000
+      do i=1,1000000
          call blankstring (string)
          read (nunit,1014,end=60) string(1:80)
          read (string,*) wavegin
@@ -172,17 +172,17 @@ c*****transition probabilities, hyperfine and isotopic substructure
      .       texti, textg, textgin, textkin,
      .       testchars, textx,
      .       choice
-      real*8 wavei(100000), idi(100000), epi(100000), loggfi(100000),
-     .       wavex(100000), idx(100000), epx(100000), loggfx(100000),
-     .       strengthx(100000),
-     .       waveg(40000), idg(40000), epg(40000), loggfg(40000),
+      real*8 wavei(1000000),idi(1000000),epi(1000000),loggfi(1000000),
+     .       wavex(1000000),idx(1000000),epx(1000000),loggfx(1000000),
+     .       strengthx(1000000),
+     .       waveg(80000), idg(80000), epg(80000), loggfg(80000),
      .       wavegin, idgin, epgin, loggfgin,
      .       wavekin, idkin, epkin, loggfkin,
      .       wavelo, wavehi
       integer molatom, nlist, itot, nlp, nstring, nunit, noutunit
       character*80 inlist, outlist, linepath, string
-      character*40 texti(100000), textg(40000), textgin, textkin,
-     .             testchars, textx(100000)
+      character*40 texti(1000000), textg(80000), textgin, textkin,
+     .             testchars, textx(1000000)
       character*1 choice
 
 c*****open the appropriate Kurucz atomic line file
@@ -208,7 +208,7 @@ c*****open the appropriate Kurucz atomic line file
 
 c*****read in the Kurucz lines
       i = 0
-      do k=1,1000000
+      do k=1,10000000
          write (textkin,1009)
          read (nunit,1001,end=10) wavekin, idkin, epkin, loggfkin, 
      .                            textkin
@@ -232,7 +232,7 @@ c*****open the good gf list; read in its lines
       call openfile (inlist, nlist, linepath, nlp, string, nstring,
      .               nunit)
       j = 0
-      do k=1,400000
+      do k=1,800000
          write (textgin,1009)
          read (nunit,1001,end=15) wavegin, idgin, epgin, loggfgin, 
      .                            textgin
@@ -270,7 +270,7 @@ c*****use the good gf list to change gfs or add to Kurucz list
             enddo
             if (match .eq. 0) then 
                itot = itot + 1
-               if (itot .gt. 99999) call shutdown
+               if (itot .gt. 999999) call shutdown
                wavei(itot) = waveg(j)
                idi(itot) = idg(j)
                epi(itot) = epg(j)
@@ -289,7 +289,7 @@ c*****open the file of good gfs with hyperfine/isotopic; read the data
       call openfile (inlist, nlist, linepath, nlp, string, nstring,
      .               nunit)
       j = 0
-      do k=1,400000
+      do k=1,800000
          read (nunit,1001,end=20) wavegin, idgin, epgin, loggfgin, 
      .                            textgin
          if (dabs(wavegin).lt.wavelo .or.
@@ -318,7 +318,7 @@ c     the original list or adding in as necessary
             enddo
          else
             itot = itot + 1
-            if (itot .gt. 99999) call shutdown
+            if (itot .gt. 999999) call shutdown
             wavei(itot) = waveg(k)
             idi(itot) = idg(k)
             epi(itot) = epg(k)
@@ -360,17 +360,17 @@ c*****including CH, NH, OH, HF, MgH, HCl
      .       texti, textg, textgin, textkin,
      .       testchars, textx,
      .       choice
-      real*8 wavei(100000), idi(100000), epi(100000), loggfi(100000),
-     .       wavex(100000), idx(100000), epx(100000), loggfx(100000),
-     .       strengthx(100000),
-     .       waveg(40000), idg(40000), epg(40000), loggfg(40000),
+      real*8 wavei(1000000),idi(1000000),epi(1000000),loggfi(1000000),
+     .       wavex(1000000),idx(1000000),epx(1000000),loggfx(1000000),
+     .       strengthx(1000000),
+     .       waveg(80000), idg(80000), epg(80000), loggfg(80000),
      .       wavegin, idgin, epgin, loggfgin,
      .       wavekin, idkin, epkin, loggfkin,
      .       wavelo, wavehi
       integer molatom, nlist, itot, nlp, nstring, nunit, noutunit
       character*80 inlist, outlist, linepath, string
-      character*40 texti(100000), textg(40000), textgin, textkin,
-     .             testchars, textx(100000)
+      character*40 texti(1000000), textg(80000), textgin, textkin,
+     .             testchars, textx(1000000)
       character*1 choice
 
       write (*,*) 'hydrides [CH,NH,OH,HF,MgH,HCl] (y/n)? '
@@ -398,7 +398,7 @@ c*****including CH, NH, OH, HF, MgH, HCl
       call openfile (inlist, nlist, linepath, nlp, string,
      .               nstring, nunit)
 
-      do k=1,1000000
+      do k=1,10000000
          read (nunit,1001,end=10) wavegin, idgin, epgin,
      .                            loggfgin, textgin
          if (wavegin .gt. wavehi) exit
@@ -412,7 +412,7 @@ c*****including CH, NH, OH, HF, MgH, HCl
          if (intidg .eq. 107 .and.  wavegin .gt. 3500.) cycle
          if (intidg .eq. 112 .and.  wavegin .lt. 4500.) cycle
          itot = itot + 1
-         if (itot .gt. 99999) call shutdown
+         if (itot .gt. 999999) call shutdown
          wavei(itot) = wavegin
          idi(itot) = idgin
          epi(itot) = epgin
@@ -446,17 +446,17 @@ c*****CN blue and red systems
      .       texti, textg, textgin, textkin,
      .       testchars, textx,
      .       choice
-      real*8 wavei(100000), idi(100000), epi(100000), loggfi(100000),
-     .       wavex(100000), idx(100000), epx(100000), loggfx(100000),
-     .       strengthx(100000),
-     .       waveg(40000), idg(40000), epg(40000), loggfg(40000),
+      real*8 wavei(1000000),idi(1000000),epi(1000000),loggfi(1000000),
+     .       wavex(1000000),idx(1000000),epx(1000000),loggfx(1000000),
+     .       strengthx(1000000),
+     .       waveg(80000), idg(80000), epg(80000), loggfg(80000),
      .       wavegin, idgin, epgin, loggfgin,
      .       wavekin, idkin, epkin, loggfkin,
      .       wavelo, wavehi
       integer molatom, nlist, itot, nlp, nstring, nunit, noutunit
       character*80 inlist, outlist, linepath, string
-      character*40 texti(100000), textg(40000), textgin, textkin,
-     .             testchars, textx(100000)
+      character*40 texti(1000000), textg(80000), textgin, textkin,
+     .             testchars, textx(1000000)
       character*1 choice
 
       write (*,*) 'CN [blue and red systems] (y/n)? '
@@ -485,7 +485,7 @@ c*****CN blue and red systems
       call openfile (inlist, nlist, linepath, nlp, string, 
      .               nstring, nunit)
 
-      do k=1,1000000
+      do k=1,10000000
          read (nunit,1001,end=10) wavegin, idgin, epgin,
      .                            loggfgin, textgin
          if (wavegin .gt. wavehi) exit
@@ -493,7 +493,7 @@ c*****CN blue and red systems
          intidg = int(100000.*idgin+0.001)
          if (epgin.le.4.5 .and. intidg .ne. 60701215) then
             itot = itot + 1
-            if (itot .gt. 99999) call shutdown
+            if (itot .gt. 999999) call shutdown
             wavei(itot) = wavegin
             idi(itot) = idgin
             epi(itot) = epgin
@@ -528,17 +528,17 @@ c*****C2 Swan bands with E.P < 4.5 eV
      .       texti, textg, textgin, textkin,
      .       testchars, textx,
      .       choice
-      real*8 wavei(100000), idi(100000), epi(100000), loggfi(100000),
-     .       wavex(100000), idx(100000), epx(100000), loggfx(100000),
-     .       strengthx(100000),
-     .       waveg(40000), idg(40000), epg(40000), loggfg(40000),
+      real*8 wavei(1000000),idi(1000000),epi(1000000),loggfi(1000000),
+     .       wavex(1000000),idx(1000000),epx(1000000),loggfx(1000000),
+     .       strengthx(1000000),
+     .       waveg(80000), idg(80000), epg(80000), loggfg(80000),
      .       wavegin, idgin, epgin, loggfgin,
      .       wavekin, idkin, epkin, loggfkin,
      .       wavelo, wavehi
       integer molatom, nlist, itot, nlp, nstring, nunit, noutunit
       character*80 inlist, outlist, linepath, string
-      character*40 texti(100000), textg(40000), textgin, textkin,
-     .             testchars, textx(100000)
+      character*40 texti(1000000), textg(80000), textgin, textkin,
+     .             testchars, textx(1000000)
       character*1 choice
 
       write (*,*) 'C2 [Swan bands] (y/n)? '
@@ -560,14 +560,14 @@ c*****C2 Swan bands with E.P < 4.5 eV
       call openfile (inlist, nlist, linepath, nlp, string,
      .               nstring, nunit)
 
-      do k=1,1000000
+      do k=1,10000000
          read (nunit,1001,end=10) wavegin, idgin, epgin,
      .                            loggfgin, textgin
          if (wavegin .gt. wavehi) exit
          if (wavegin .lt. wavelo) cycle
          if (epgin .lt. 4.5) then
             itot = itot + 1
-            if (itot .gt. 99999) call shutdown
+            if (itot .gt. 999999) call shutdown
             wavei(itot) =  wavegin
             idi(itot) = idgin
             epi(itot) = epgin
@@ -602,17 +602,17 @@ c*****only included if wavelengths are between 1.0 and 9.8 microns
      .       texti, textg, textgin, textkin,
      .       testchars, textx,
      .       choice
-      real*8 wavei(100000), idi(100000), epi(100000), loggfi(100000),
-     .       wavex(100000), idx(100000), epx(100000), loggfx(100000),
-     .       strengthx(100000),
-     .       waveg(40000), idg(40000), epg(40000), loggfg(40000),
+      real*8 wavei(1000000),idi(1000000),epi(1000000),loggfi(1000000),
+     .       wavex(1000000),idx(1000000),epx(1000000),loggfx(1000000),
+     .       strengthx(1000000),
+     .       waveg(80000), idg(80000), epg(80000), loggfg(80000),
      .       wavegin, idgin, epgin, loggfgin,
      .       wavekin, idkin, epkin, loggfkin,
      .       wavelo, wavehi
       integer molatom, nlist, itot, nlp, nstring, nunit, noutunit
       character*80 inlist, outlist, linepath, string
-      character*40 texti(100000), textg(40000), textgin, textkin,
-     .             testchars, textx(100000)
+      character*40 texti(1000000), textg(80000), textgin, textkin,
+     .             testchars, textx(1000000)
       character*1 choice
 
       write (*,*) 'CO [1.0-9.8 microns] (y/n)? '
@@ -629,13 +629,13 @@ c*****only included if wavelengths are between 1.0 and 9.8 microns
       call openfile (inlist, nlist, linepath, nlp, string,
      .               nstring, nunit)
 
-      do k=1,1000000
+      do k=1,10000000
          read (nunit,1001,end=10) wavegin, idgin, epgin,
      .                            loggfgin, textgin
          if (wavegin .gt. wavehi) exit
          if (wavegin .lt. wavelo) cycle
          itot = itot + 1
-         if (itot .gt. 99999) call shutdown
+         if (itot .gt. 999999) call shutdown
          wavei(itot) = wavegin
          idi(itot) = idgin
          epi(itot) = epgin
@@ -669,17 +669,17 @@ c*****this routine simply makes the user select 'y' or 'n'
      .       texti, textg, textgin, textkin,
      .       testchars, textx,
      .       choice
-      real*8 wavei(100000), idi(100000), epi(100000), loggfi(100000),
-     .       wavex(100000), idx(100000), epx(100000), loggfx(100000),
-     .       strengthx(100000),
-     .       waveg(40000), idg(40000), epg(40000), loggfg(40000),
+      real*8 wavei(1000000),idi(1000000),epi(1000000),loggfi(1000000),
+     .       wavex(1000000),idx(1000000),epx(1000000),loggfx(1000000),
+     .       strengthx(1000000),
+     .       waveg(80000), idg(80000), epg(80000), loggfg(80000),
      .       wavegin, idgin, epgin, loggfgin,
      .       wavekin, idkin, epkin, loggfkin,
      .       wavelo, wavehi
       integer molatom, nlist, itot, nlp, nstring, nunit, noutunit
       character*80 inlist, outlist, linepath, string
-      character*40 texti(100000), textg(40000), textgin, textkin,
-     .             testchars, textx(100000)
+      character*40 texti(1000000), textg(80000), textgin, textkin,
+     .             testchars, textx(1000000)
       character*1 choice
 
       write (*,*) 'SiH [solar isotopic mix] (y/n)? '
@@ -698,7 +698,7 @@ c*****this routine simply makes the user select 'y' or 'n'
 
       strengthmax = -1000.
       ktotx = 0
-      do k=1,1000000
+      do k=1,10000000
          read (nunit,1001,end=91) wavegin, idgin, epgin,
      .                            loggfgin, textgin
          if (wavegin .gt. wavehi) exit
@@ -727,7 +727,7 @@ c*****this routine simply makes the user select 'y' or 'n'
       do k=1,ktotx                                
          if (strengthx(k) .ge. strengthmax-1.) then
             itot = itot + 1                       
-            if (itot .gt. 99999) call shutdown
+            if (itot .gt. 999999) call shutdown
             wavei(itot) = wavex(k)                
             idi(itot) = idx(k)                    
             epi(itot) = epx(k)                    
@@ -765,17 +765,17 @@ c*****studies have put them into the googf and goodgfhfs lists
      .       texti, textg, textgin, textkin,
      .       testchars, textx,
      .       choice
-      real*8 wavei(100000), idi(100000), epi(100000), loggfi(100000),
-     .       wavex(100000), idx(100000), epx(100000), loggfx(100000),
-     .       strengthx(100000),
-     .       waveg(40000), idg(40000), epg(40000), loggfg(40000),
+      real*8 wavei(1000000),idi(1000000),epi(1000000),loggfi(1000000),
+     .       wavex(1000000),idx(1000000),epx(1000000),loggfx(1000000),
+     .       strengthx(1000000),
+     .       waveg(80000), idg(80000), epg(80000), loggfg(80000),
      .       wavegin, idgin, epgin, loggfgin,
      .       wavekin, idkin, epkin, loggfkin,
      .       wavelo, wavehi
       integer molatom, nlist, itot, nlp, nstring, nunit, noutunit
       character*80 inlist, outlist, linepath, string
-      character*40 texti(100000), textg(40000), textgin, textkin,
-     .             testchars, textx(100000)
+      character*40 texti(1000000), textg(80000), textgin, textkin,
+     .             testchars, textx(1000000)
       character*1 choice
 
 c*****find the possible Kurucz iso/hfs features in this region
@@ -790,7 +790,7 @@ c*****find the possible Kurucz iso/hfs features in this region
       call openfile (inlist, nlist, linepath, nlp, string, nstring,
      .               nunit)
       j = 0
-      do k=1,400000
+      do k=1,800000
          read (nunit,1001,end=50) wavegin, idgin, epgin, loggfgin,
      .                            textgin
          if (dabs(wavegin).lt.wavelo .or.
@@ -819,7 +819,7 @@ c*****list or adding in as necessary
             enddo
          else
             itot = itot + 1
-            if (itot .gt. 99999) call shutdown
+            if (itot .gt. 999999) call shutdown
             wavei(itot) = waveg(k)
             idi(itot) = idg(k)
             epi(itot) = epg(k)
@@ -853,17 +853,17 @@ c*****including CH, NH, OH, HF, MgH, HCl
      .       texti, textg, textgin, textkin,
      .       testchars, textx,
      .       choice
-      real*8 wavei(100000), idi(100000), epi(100000), loggfi(100000),
-     .       wavex(100000), idx(100000), epx(100000), loggfx(100000),
-     .       strengthx(100000),
-     .       waveg(40000), idg(40000), epg(40000), loggfg(40000),
+      real*8 wavei(1000000),idi(1000000),epi(1000000),loggfi(1000000),
+     .       wavex(1000000),idx(1000000),epx(1000000),loggfx(1000000),
+     .       strengthx(1000000),
+     .       waveg(80000), idg(80000), epg(80000), loggfg(80000),
      .       wavegin, idgin, epgin, loggfgin,
      .       wavekin, idkin, epkin, loggfkin,
      .       wavelo, wavehi
       integer molatom, nlist, itot, nlp, nstring, nunit, noutunit
       character*80 inlist, outlist, linepath, string
-      character*40 texti(100000), textg(40000), textgin, textkin,
-     .             testchars, textx(100000)
+      character*40 texti(1000000), textg(80000), textgin, textkin,
+     .             testchars, textx(1000000)
       character*1 choice
 
       write (*,*) 'TiO (y/n)? '
@@ -898,13 +898,13 @@ c*****start with 48TiO
       call openfile (inlist, nlist, linepath, nlp, string,    
      .               nstring, nunit)                          
                                                               
-      do k=1,1000000                                          
+      do k=1,10000000                                          
          read (nunit,1001,end=10) wavegin, idgin, epgin,      
      .                            loggfgin, textgin           
          if (wavegin .gt. wavehi) exit                        
          if (wavegin .lt. wavelo) cycle                       
          itot = itot + 1                                      
-         if (itot .gt. 99999) call shutdown
+         if (itot .gt. 999999) call shutdown
          wavei(itot) = wavegin                                
          idi(itot) = idgin                                    
          epi(itot) = epgin                                    
@@ -930,13 +930,13 @@ c*****^50TiO: 0.0518/0.7372 = 0.0702     log = -1.153
       nunit = 9
       call openfile (inlist, nlist, linepath, nlp, string,
      .               nstring, nunit)
-      do k=1,1000000
+      do k=1,10000000
          read (nunit,1001,end=20) wavegin, idgin, epgin,
      .                            loggfgin, textgin
          if (wavegin .gt. wavehi) exit
          if (wavegin .lt. wavelo) cycle
          itot = itot + 1
-         if (itot .gt. 99999) call shutdown
+         if (itot .gt. 999999) call shutdown
          wavei(itot) = wavegin
          idi(itot) = idgin
          epi(itot) = epgin
@@ -979,17 +979,17 @@ c*****when finished, will include lots of HiTRAN lines
      .       texti, textg, textgin, textkin,
      .       testchars, textx,
      .       choice
-      real*8 wavei(100000), idi(100000), epi(100000), loggfi(100000),
-     .       wavex(100000), idx(100000), epx(100000), loggfx(100000),
-     .       strengthx(100000),
-     .       waveg(40000), idg(40000), epg(40000), loggfg(40000),
+      real*8 wavei(1000000),idi(1000000),epi(1000000),loggfi(1000000),
+     .       wavex(1000000),idx(1000000),epx(1000000),loggfx(1000000),
+     .       strengthx(1000000),
+     .       waveg(80000), idg(80000), epg(80000), loggfg(80000),
      .       wavegin, idgin, epgin, loggfgin,
      .       wavekin, idkin, epkin, loggfkin,
      .       wavelo, wavehi
       integer molatom, nlist, itot, nlp, nstring, nunit, noutunit
       character*80 inlist, outlist, linepath, string
-      character*40 texti(100000), textg(40000), textgin, textkin,
-     .             testchars, textx(100000)
+      character*40 texti(1000000), textg(80000), textgin, textkin,
+     .             testchars, textx(1000000)
       character*1 choice
 
       write (*,*) 'H2O [0.8-5.0 microns] (y/n)? '
@@ -1020,13 +1020,13 @@ c*****when finished, will include lots of HiTRAN lines
       call openfile (inlist, nlist, linepath, nlp, string,
      .               nstring, nunit)
 
-      do k=1,1000000
+      do k=1,10000000
          read (nunit,1001,end=10) wavegin, idgin, epgin,
      .                            loggfgin, textgin
          if (wavegin .gt. wavehi) exit
          if (wavegin .lt. wavelo) cycle
          itot = itot + 1
-         if (itot .gt. 99999) call shutdown
+         if (itot .gt. 999999) call shutdown
          wavei(itot) = wavegin
          idi(itot) = idgin
          epi(itot) = epgin
@@ -1062,17 +1062,17 @@ c*****writeup for explanation.
      .       texti, textg, textgin, textkin,
      .       testchars, textx,
      .       choice
-      real*8 wavei(100000), idi(100000), epi(100000), loggfi(100000),
-     .       wavex(100000), idx(100000), epx(100000), loggfx(100000),
-     .       strengthx(100000),
-     .       waveg(40000), idg(40000), epg(40000), loggfg(40000),
+      real*8 wavei(1000000),idi(1000000),epi(1000000),loggfi(1000000),
+     .       wavex(1000000),idx(1000000),epx(1000000),loggfx(1000000),
+     .       strengthx(1000000),
+     .       waveg(80000), idg(80000), epg(80000), loggfg(80000),
      .       wavegin, idgin, epgin, loggfgin,
      .       wavekin, idkin, epkin, loggfkin,
      .       wavelo, wavehi
       integer molatom, nlist, itot, nlp, nstring, nunit, noutunit
       character*80 inlist, outlist, linepath, string
-      character*40 texti(100000), textg(40000), textgin, textkin,
-     .             testchars, textx(100000)
+      character*40 texti(1000000), textg(80000), textgin, textkin,
+     .             testchars, textx(1000000)
       character*1 choice
 
       write (*,*) 'FeH [0.6-5.0 microns] (y/n)? '
@@ -1096,13 +1096,13 @@ c*****writeup for explanation.
       call openfile (inlist, nlist, linepath, nlp, string,    
      .               nstring, nunit)                          
                                                               
-      do k=1,1000000                                          
+      do k=1,10000000                                          
          read (nunit,1001,end=10) wavegin, idgin, epgin,      
      .                            loggfgin, textgin           
          if (wavegin .gt. wavehi) exit                        
          if (wavegin .lt. wavelo) cycle                       
          itot = itot + 1                                      
-         if (itot .gt. 99999) call shutdown
+         if (itot .gt. 999999) call shutdown
          wavei(itot) = wavegin                                
          idi(itot) = idgin                                    
          epi(itot) = epgin                                    
@@ -1213,7 +1213,7 @@ c     exceeds 99,999; the arrays have space for "only" 100,000 lines
       
 1001  format (' '/
      .        '-----------------------------------------------------'/
-     .        '# of lines in the output list exceeds 100,000;'/
+     .        '# of lines in the output list exceeds 1,000,000;'/
      .        'maybe reduce the wavelength range?'/
      .        'UNTIL THEN, I QUIT!'/
      .        '-----------------------------------------------------')
