@@ -4,25 +4,29 @@ from astropy import table
 
 linemake_dir = "/Users/alexji/S5/linelists/linemake"
 linemake_files = linemake_dir + '/mooglists'
-masseron_file = "/Users/alexji/Dropbox/Alex_Hires/linelists_master/CH_lines/masseron_all.txt"
+masseron_file = "/Users/alexji/Dropbox/Alex_Hires/linelists_master/CH_lines/chmasseron_fixed.moog"
 
 all_masseron = LineList.read(masseron_file)
 
-masseron = all_masseron[all_masseron['loggf'] > -6]
+#print("Cutting to loggf > -6")
+#masseron = all_masseron[all_masseron['loggf'] > -6]
+#print(len(masseron), np.min(masseron['loggf']))
+#print("Removed",len(all_masseron) - len(masseron),"lines")
 
-print(len(masseron), np.min(masseron['loggf']))
-print("Removed",len(all_masseron) - len(masseron),"lines")
+# Put in everything
+masseron = all_masseron
 assert np.all(np.logical_and(masseron["elem1"]=="H",masseron["elem2"]=="C"))
 
 # Comment with Masseron14; fix dissoc_E
-masseron.remove_column("comments")
-masseron.remove_column("dissoc_E")
+#masseron.remove_column("comments")
+#masseron["comments"] = "MASSERON14"
 #masseron.add_column(Column(["MASSERON14" for x in range(len(masseron))],name="comments"))
-masseron["dissoc_E"] = 3.464 # from mooghyd
-masseron["comments"] = "MASSERON14"
+masseron.remove_column("dissoc_E")
+#masseron["dissoc_E"] = 3.464 # from mooghyd
+masseron["dissoc_E"] = 3.466 # Recommended by Masseron+14
 
-mooghydfiles = ["mooghyd2000","mooghyd3000","mooghyd4000",\
-                "mooghyd6000","mooghyd10000"]
+mooghydfiles = ["mooghyd02000","mooghyd03000","mooghyd04000",\
+                "mooghyd06000","mooghyd10000"]
 wl_ranges = [(2000,3000),(3000,4000),(4000,6000),(6000,10000),(10000,1000000)]
 ncomment_masseron = int(masseron['comments'].dtype.str[2:])
 for snefile, wl_range in zip(mooghydfiles,wl_ranges):
