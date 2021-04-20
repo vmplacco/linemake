@@ -34,7 +34,7 @@ for snefile, wl_range in zip(mooghydfiles,wl_ranges):
     # Strip CH lines
     ll = LineList.read(linemake_files+'/'+snefile+'_oldCH')
     ii = ~np.logical_and(ll["elem1"]=="H", ll["elem2"]=="C")
-    print("{} CH lines being removed".format(np.sum(ii)))
+    print("{} CH lines being removed".format(np.sum(~ii)))
     ll = ll[ii]
     
     # Have to match comment sizes...
