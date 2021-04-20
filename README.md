@@ -1,35 +1,42 @@
 # `linemake` Atomic and Molecular Line List Generator
 
 ## Differences
-This repository is Alex Ji's fork. He has changed:
+This repository is Alex Ji's fork. He has changed compared to the main repository:
 
+* Using the fixed Masseron line list from http://cdsarc.u-strasbg.fr/viz-bin/qcat?J/A+A/571/A47
+  * note that I have included ALL C-H lines, including incredibly weak ones.
+    You'll almost certainly want to do a cut (in my experience loggf > -6 has been fine)
+* Added/updated some atomic lines to goodgf:
+  * O I: 6300, 6363, 777nm triplet, 8446, (from VALD/Caffau+08)
+  * Na: 5682, 5688, 5889, 5895 from NIST (AA for D lines, A for the other two). Note for 5688 I merged the loggf a strong and a weak line at the same wavelength.
+  * Mg: I put in 9 lines from NIST of varying quality. Probably of particular note is that the Mg b lines now have NIST A and NIST B+, and they are a bit different from Kurucz by 0.01 dex.
+  * Al: I put in four Al lines 3944, 3961 (NIST B+) and 6696, 6698 (NIST C+)
+  * Si: I put in a bunch of lines with NIST values. Except for 3905, they are grade C and below.
+  * K: I put in the NIST AAA values for 7665 and 7699, which are within .01 of the Kurucz values.
+  * Sr: For 4215 I updated from an older NIST/A to NIST AA value.
+  * Y II: I added a line at 4883 from HANNAFORD that is strong and has been reliable
+
+Changes compared to Alex's previous version of linemake (used for the first S5 paper)
+* Possibly a lot of other changes below 3000A, I did not bother to modify this.
+* I no longer have included all the NIST Fe II lines into the synthesis. I guess they have decided Kurucz is better than bad NIST.
+* There are more melendez et al lines for Fe II
+* The Ca lines have been replaced with an upcoming Lawler+ measurement. A quick glance suggests they are similar to the good VALD lines, though in individual cases can differ by 0.10 dex.
+* They have removed Roederer + Lawler lines for 33.0
+* They have added all of the Nils02 lines for Th and U
+* Some lines of Lu (71.1) have been removed
+* Some lines of Os (76.0) have been added from Quinet06
+* I appear to have made an energy miscalculation (or zero-point offset) of about 0.004 eV for Cr I lines, not a big deal
+
+The big differences from before are Fe II and Ca I.
+
+For posterity, here is the choice I made previously for Fe II:
+```
 UPDATE 2019-08-18 (APJ): I replaced loggf values for Fe II using Den Hartog et al. 2019 https://ui.adsabs.harvard.edu/abs/2019ApJS..243...33D/abstract and Melendez & Barbuy 2009 https://ui.adsabs.harvard.edu/abs/2009A%26A...497..611M/abstract.
 The number of Fe II lines in goodgf and replaced is:
-```
 N_total = 2579
 N_den19 = 118/131 [the remaining lines have lambda < 3000A so I didn't worry about it]
 N_mel09 = 69/142 [8 of these are in Den Hartog]
 ```
-
-CH (APJ): I have put in the linelist from Masseron et al. 2014 based on this file from Kurucz http://kurucz.harvard.edu/molecules/ch/chmasseron.asc into `mooglists/mooghyd*`. In the process, I cut to only keep CH lines with loggf > -6 (based on some tests done years ago, I decided this was okay). https://ui.adsabs.harvard.edu/abs/2014A%26A...571A..47M/abstract
-
-OTHER ATOMIC LINES (APJ): (these are added to goodgf manually)
-
-O I: 6300A and 6363b from VALD
-
-Na: 5682, 5688, 5889, 5895 from NIST (AA for D lines, A for the other two). Note for 5688 I merged the loggf a strong and a weak line at the same wavelength.
-
-Mg: I put in 9 lines from NIST of varying quality. Probably of particular note is that the Mg b lines now have NIST A and NIST B+, and they are a bit different from Kurucz by 0.01 dex.
-
-Al: I put in four Al lines 3944, 3961 (NIST B+) and 6696, 6698 (NIST C+)
-
-Si: I put in a bunch of lines with NIST values. Except for 3905, they are grade C and below.
-
-K: I put in the NIST AAA values for 7665 and 7699, which are within .01 of the Kurucz values.
-
-Ca: I put in a mix of things from VALD and NIST. These were checked against HD122563 as doing a pretty good job.
-
-Sr: For 4215 I updated from an older NIST/A to NIST AA value.
 
 
 ## About 
