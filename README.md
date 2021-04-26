@@ -18,7 +18,7 @@
 
 ## Citing `linemake` in your published work
 
-If you use `linemake` in your work, please cite the presentation paper [Placco et al. (2021, Res. Notes AAS, 5, 92)](https://iopscience.iop.org/article/10.3847/2515-5172/abf651), this github repository (as a footnote), and the relevant articles listed below.
+If you use `linemake` in your work, please cite the presentation paper [Placco et al. (2021, Res. Notes AAS, 5, 92)](https://ui.adsabs.harvard.edu/abs/2021RNAAS...5...92P), this github repository (as a footnote), and the relevant articles listed below.
 
 ## Disclaimer
 
