@@ -20,9 +20,7 @@
 
 * If you use `linemake` in your work, please cite the presentation paper [Placco et al. (2021, Res. Notes AAS, 5, 92)](https://ui.adsabs.harvard.edu/abs/2021RNAAS...5...92P), this github repository (as a footnote), and the relevant articles listed below.
 
-* `linemake` is also on the [Astrophysics Source Code Libray](https://ascl.net/2104.027)
-
-<a href="https://ascl.net/2104.027"><img src="https://img.shields.io/badge/ascl-2104.027-blue.svg?colorB=262255" alt="ascl:2104.027" /></a>
+* `linemake` is also on the [Astrophysics Source Code Libray](https://ascl.net/2104.027) <a href="https://ascl.net/2104.027"><img src="https://img.shields.io/badge/ascl-2104.027-blue.svg?colorB=262255" alt="ascl:2104.027" /></a>
 
 ## Disclaimer
 
