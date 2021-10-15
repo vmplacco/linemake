@@ -138,7 +138,7 @@ Species|References & Notes
 `CH`| [Masseron et al. (2014, A&A, 571, 47)](https://ui.adsabs.harvard.edu/abs/2014A%26A...571A..47M); files obtained from Bertrand Plez
 `CN`| [Sneden et al. (2014, ApJS, 214, 26)](https://ui.adsabs.harvard.edu/abs/2014ApJS..214...26S); violet and red         
 `CO`| Pretty much the relatively simply CO parameters in the IR ro-vibrational bands have been known for a couple of decades. However, in trial syntheses conducted by Chris Sneden and Melike Afsar it was noticed that that K-band &Delta;v = 2 first overtone band strengths were too strong for the C and O abundances derived from optical data. But they also clashed with the H-band &Delta;v = 3 "second overtone" bands in similar fashion.  Therefore we decided to raise the *gf*-values of the &Delta;v = 2 lines by 0.15 dex, and leave the &Delta;v = 3 lines alone.  This small pragmatic alteration is in the CO line list here; users need to be aware of this if CO is used for abundance determinations. To be updated with [HITRAN](https://hitran.org/lbl/) line parameters from [Li et al. (2015, ApJS, 216, 15)](https://ui.adsabs.harvard.edu/abs/2015ApJS..216...15L)
-`OH`| Ro-vibrational bands:  [Brooke et al. (2015, JQSRT, 168, 142)](https://www.sciencedirect.com/science/article/abs/pii/S0022407315002721?via%3Dihub); these are only for the IR transitions             
+`OH`| Ro-vibrational bands:  [Brooke et al. (2016, JQSRT, 168, 142)](https://www.sciencedirect.com/science/article/abs/pii/S0022407315002721?via%3Dihub); these are only for the IR transitions             
 `HCl`| [HITRAN](https://hitran.org/lbl/); IR transitions only
 `HF`| [HITRAN](https://hitran.org/lbl/); IR transitions only
 `SiO`| [Kurucz database](http://kurucz.harvard.edu/molecules/sio/); IR transitions only
