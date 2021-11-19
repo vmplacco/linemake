@@ -1,6 +1,6 @@
 # `linemake` Atomic and Molecular Line List Generator
 
-:warning: this branch has a different set of CH lines (more info TBD)
+:warning: This branch has a different set of CH lines (see `https://github.com/alexji/linemake`)
 
 ## About 
 
