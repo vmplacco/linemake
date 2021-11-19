@@ -1,5 +1,7 @@
 # `linemake` Atomic and Molecular Line List Generator
 
+:warning: this branch has a different set of CH lines (more info TBD)
+
 ## About 
 
 `linemake` is an open-source atomic and molecular line list generator. Rather than a replacement for a number of well-established atomic and molecular spectral databases, `linemake` aims to be a lightweight, easy-to-use tool to generate formatted and curated lists suitable for spectral synthesis work. We stress that the users of should be *in charge* of all of their transition data, and should cite the appropriate sources in their published work, given below.
