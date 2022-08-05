@@ -28,7 +28,7 @@ The choices of which lines of which species to include in `linemake` have often 
 
 ## Downloading `linemake`
 
-* For non-git users, click on the green `Code` button on the top left then "Download ZIP". Unzip the file in your folder of choice and follow the installation instructions below.
+* For non-git users, click on the green `Code` button on the top right then "Download ZIP". Unzip the file in your folder of choice and follow the installation instructions below.
 
 * For `git` users, `git clone https://github.com/vmplacco/linemake.git` will set up the repository locally, so you can then follow the instructions below.
 
