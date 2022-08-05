@@ -26,6 +26,14 @@
 
 The choices of which lines of which species to include in `linemake` have often been driven by the authors' own spectroscopic interests (e.g., note the large number of entries for transitions of neutron-capture elements that can only be detected in vacuum-UV spectroscopy). However, we would welcome hearing from users who can suggest other strongly-sourced species (with recent reliable lab/theory results) that might be added to our database.
 
+## Downloading `linemake`
+
+* For non-git users, click on the green `Code` button on the top left then "Download ZIP". Unzip the file in your folder of choice and follow the installation instructions below.
+
+* For `git` users, `git clone https://github.com/vmplacco/linemake.git` will set up the repository locally, so you can then follow the instructions below.
+
+If you have any issues, send an email to vmplacco@gmail.com or file an issue on this repository.
+
 ## Compiling the code and known idiosyncrasies
 
 First, edit the [`linemake.f`](linemake.f) file (line 34) at the start of the program, to point the code to its species linelists `linepath='/path/to/linemake/mooglists'`. Then, compile the code:
