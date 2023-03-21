@@ -64,6 +64,8 @@ In succeeding sections we discuss first atomic and then molecular data sources. 
 
 Species|References & Notes
 -------|-----
+`Si I` | A mix of NIST values and updates based on new branching fraction measurements by [Den Hartog et al. (2023, ApJS, 265, 42)](https://ui.adsabs.harvard.edu/abs/2023arXiv230111391D)
+`Si II`| Two UV lines with updates from new branching fraction measurements by [Den Hartog et al. (2023, ApJS, 265, 42)](https://ui.adsabs.harvard.edu/abs/2023arXiv230111391D)
 `Sc I` | [Lawler et al. (2019, ApJS, 241, 21)](https://ui.adsabs.harvard.edu/abs/2019ApJS..241...21L/); includes HFS
 `Sc II`| [Lawler et al. (2019, ApJS, 241, 21)](https://ui.adsabs.harvard.edu/abs/2019ApJS..241...21L/); includes HFS
 `Ti I` | [Lawler et al. (2013, ApJS, 205, 11)](https://ui.adsabs.harvard.edu/abs/2013ApJS..205...11L/)
@@ -108,7 +110,7 @@ Species|References & Notes
 `Sn II`| Added 2151 Å line with log(*gf*) value from [Oliver & Hibbert (2010, J Phys B, 43, 074013)](https://ui.adsabs.harvard.edu/abs/2010JPhB...43g4013O/abstract)
 `Sb I`| Roederer et al. (2021, in preparation) for two UV lines
 `Te I`| [Roederer et al. (2012, ApJL, 747, L8)](https://ui.adsabs.harvard.edu/abs/2012ApJ...747L...8R). Added line at 2002 Å using the transition probability from [Ubelis & Berzinsh (1991, PhyS, 43, 162)](https://ui.adsabs.harvard.edu/abs/1991PhyS...43..162U/abstract), with uncertainty 0.17 dex.  Also added line at 2259 Å using the transition probability recommended by [Morton (2000, ApJS, 130, 403)](https://ui.adsabs.harvard.edu/abs/2000ApJS..130..403M/abstract)
-`La II`| [Lawler et al. (2001, ApJ, 556, 452)](https://ui.adsabs.harvard.edu/abs/2001ApJ...556..452L)
+`La II`| [Lawler et al. (2001, ApJ, 556, 452)](https://ui.adsabs.harvard.edu/abs/2001ApJ...556..452L). One lone from Shah et al. (2023, submitted)
 `Ce II`| [Lawler et al. (2009, ApJS, 182, 51)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...51L)
 `Pr II`| [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S)
 `Nd II`| [Den Hartog et al. (2003, ApJS, 148, 543)](https://ui.adsabs.harvard.edu/abs/2003ApJS..148..543D) and [Roederer et al. (2008, ApJ, 675, 723)](https://ui.adsabs.harvard.edu/abs/2008ApJ...675..723R) for ISO & HFS. Note that the 4314.50Å line has a solar-derived log(*gf*)
