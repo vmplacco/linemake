@@ -64,8 +64,6 @@ In succeeding sections we discuss first atomic and then molecular data sources. 
 
 Species|References & Notes
 -------|-----
-`Si I` | A mix of NIST values and updates based on new branching fraction measurements by [Den Hartog et al. (2023, ApJS, 265, 42)](https://ui.adsabs.harvard.edu/abs/2023arXiv230111391D)
-`Si II`| Two UV lines with updates from new branching fraction measurements by [Den Hartog et al. (2023, ApJS, 265, 42)](https://ui.adsabs.harvard.edu/abs/2023arXiv230111391D)
 `Sc I` | [Lawler et al. (2019, ApJS, 241, 21)](https://ui.adsabs.harvard.edu/abs/2019ApJS..241...21L/); includes HFS
 `Sc II`| [Lawler et al. (2019, ApJS, 241, 21)](https://ui.adsabs.harvard.edu/abs/2019ApJS..241...21L/); includes HFS
 `Ti I` | [Lawler et al. (2013, ApJS, 205, 11)](https://ui.adsabs.harvard.edu/abs/2013ApJS..205...11L/)
@@ -146,6 +144,8 @@ Species|References & Notes
 -------|-----
 `Li I`| Resonance line. Nothing special needs to be done here to get the full isotopic and hyperfine substructure. The total *gf* from [Kurucz](http://kurucz.harvard.edu/atoms.html), has been adopted; it is close to that recommended by [NIST](https://www.nist.gov/pml/atomic-spectra-database)
 `Al II`| Roederer & Lawler (2021, in preparation). This is the HFS for one UV resonance line
+`Si I` | A mix of NIST values and updates based on new branching fraction measurements by [Den Hartog et al. (2023, ApJS, 265, 42)](https://ui.adsabs.harvard.edu/abs/2023arXiv230111391D)
+`Si II`| Two UV lines with updates from new branching fraction measurements by [Den Hartog et al. (2023, ApJS, 265, 42)](https://ui.adsabs.harvard.edu/abs/2023arXiv230111391D)
 `Ca I`| Den Hartog et al. (2021, ApJS, submitted). This is a combined lab and theoretical study, and the included transitions have transition probabilities now with very small uncertainties
 `Ca II`| Den Hartog et al. (2021, ApJS, submitted). No new lab data here, but Ca II is a well-studied single electron species
 
