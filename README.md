@@ -143,6 +143,7 @@ Species|References & Notes
 Species|References & Notes
 -------|-----
 `Li I`| Resonance line. Nothing special needs to be done here to get the full isotopic and hyperfine substructure. The total *gf* from [Kurucz](http://kurucz.harvard.edu/atoms.html), has been adopted; it is close to that recommended by [NIST](https://www.nist.gov/pml/atomic-spectra-database)
+`O I` | A mix of NIST/B+ values and measurements by [Magg et al. (2022, A&A, 661, 140)](https://ui.adsabs.harvard.edu/abs/2022A%26A...661A.140M/)
 `Al II`| [Roederer & Lawler (2021, ApJ, 912, 119)](https://ui.adsabs.harvard.edu/abs/2021ApJ...912..119R). This is the HFS for one UV resonance line
 `Si I` | A mix of NIST values and updates based on new branching fraction measurements by [Den Hartog et al. (2023, ApJS, 265, 42)](https://ui.adsabs.harvard.edu/abs/2023arXiv230111391D)
 `Si II`| Two UV lines with updates from new branching fraction measurements by [Den Hartog et al. (2023, ApJS, 265, 42)](https://ui.adsabs.harvard.edu/abs/2023arXiv230111391D)
