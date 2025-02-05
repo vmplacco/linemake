@@ -7,8 +7,8 @@
 ## Contributors
 
 * Chris Sneden - Department of Astronomy and McDonald Observatory, The University of Texas, Austin, TX
-* [Vinicius Placco](http://vmplacco.github.io/) - NSF NOIRLab, Tucson, AZ
 * Ian Roederer - Department of Physics, North Carolina State University, Raleigh, NC
+* [Vinicius Placco](http://vmplacco.github.io/) - NSF NOIRLab, Tucson, AZ
 * James E. Lawler - Department of Physics, University of Wisconsin-Madison, Madison, WI
 * Elizabeth A. Den Hartog - Department of Physics, University of Wisconsin-Madison, Madison, WI
 * Neda Hejazi - Department of Physics and Astronomy, Georgia State University, Atlanta, GA
