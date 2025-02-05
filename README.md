@@ -148,8 +148,8 @@ Species|References & Notes
 `Mg II`| UV lines from NIST
 `Al I`| Added log(gf) values from NIST. Also included HFS from VALD for a few lines where available.
 `Al II`| [Roederer & Lawler (2021, ApJ, 912, 119)](https://ui.adsabs.harvard.edu/abs/2021ApJ...912..119R). This is the HFS for one UV resonance line
-`Si I` | A mix of NIST values and updates based on new branching fraction measurements by [Den Hartog et al. (2023, ApJS, 265, 42)](https://ui.adsabs.harvard.edu/abs/2023arXiv230111391D)
-`Si II`| Two UV lines with updates from new branching fraction measurements by [Den Hartog et al. (2023, ApJS, 265, 42)](https://ui.adsabs.harvard.edu/abs/2023arXiv230111391D)
+`Si I` | A mix of NIST values and updates based on new branching fraction measurements by [Den Hartog et al. (2023, ApJS, 265, 42)](https://ui.adsabs.harvard.edu/abs/2023arXiv230111391D), and some of the new theoretical branching fraction calculations by [Pehlivan Rhodin et al. (2024, A&A, 682, A184)](https://ui.adsabs.harvard.edu/abs/2024A%26A...682A.184P).  (The `Si I` transitions from Pehlivan Rhodin et al. not included in LINEMAKE at present are generally weak, but they could be added with some effort in the future if needs arise.)
+`Si II`| Two UV lines with updates from new branching fraction measurements by [Den Hartog et al. (2023, ApJS, 265, 42)](https://ui.adsabs.harvard.edu/abs/2023arXiv230111391D), and various other Si II lines with EP < 9 eV added from [Pehlivan Rhodin et al. (2024, A&A, 682, A184)](https://ui.adsabs.harvard.edu/abs/2024A%26A...682A.184P)
 `Ca I`| [Den Hartog et al. (2021, ApJS, 255, 227)](https://ui.adsabs.harvard.edu/abs/2021ApJS..255...27D). This is a combined lab and theoretical study, and the included transitions have transition probabilities now with very small uncertainties
 `Ca II`| [Den Hartog et al. (2021, ApJS, 255, 227)](https://ui.adsabs.harvard.edu/abs/2021ApJS..255...27D). No new lab data here, but Ca II is a well-studied single electron species
 
