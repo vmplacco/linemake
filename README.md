@@ -7,8 +7,8 @@
 ## Contributors
 
 * Chris Sneden - Department of Astronomy and McDonald Observatory, The University of Texas, Austin, TX
-* [Vini Placco](http://vmplacco.github.io/) - Community Science and Data Center/NSF’s NOIRLab, Tucson, AZ
-* Ian Roederer - Department of Astronomy, University of Michigan, Ann Arbor, MI
+* [Vinicius Placco](http://vmplacco.github.io/) - NSF NOIRLab, Tucson, AZ
+* Ian Roederer - Department of Physics, North Carolina State University, Raleigh, NC
 * James E. Lawler - Department of Physics, University of Wisconsin-Madison, Madison, WI
 * Elizabeth A. Den Hartog - Department of Physics, University of Wisconsin-Madison, Madison, WI
 * Neda Hejazi - Department of Physics and Astronomy, Georgia State University, Atlanta, GA
@@ -176,4 +176,4 @@ Our development of `linemake` has benefitted from many sources of support over t
 
 * The work of V.M.P. is supported by NOIRLab, which is managed by the Association of Universities for Research in Astronomy (AURA) under a cooperative agreement with the National Science Foundation (NSF).
 
-* I.U.R. acknowledges financial support from NASA (HST-GO-12268, HST-GO-12976, HST-AR-13246, HST-AR-13879, HST-AR-13884, HST-GO-14151, HST-GO-14231, HST-GO-14232, HST-GO-14765, HST-AR-15051, HST-GO-15657) and NSF (AST-1815403).
+* I.U.R. acknowledges financial support from NASA (HST-GO-12268, HST-GO-12976, HST-AR-13246, HST-AR-13879, HST-AR-13884, HST-GO-14151, HST-GO-14231, HST-GO-14232, HST-GO-14765, HST-AR-15051, HST-GO-15657, HST-GO-15951, HST-AR-16630, HST-GO-17166) and the NSF (AST-1815403, AST-2205847).
