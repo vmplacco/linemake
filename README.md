@@ -2,7 +2,7 @@
 
 ## Before you start
 
-The [ch_masseron](https://github.com/vmplacco/linemake/tree/ch_masseron) branch contains the `CH` line list from [Masseron et al. (2014, A&A, 571, 47)](https://ui.adsabs.harvard.edu/abs/2014A%26A...571A..47M/abstract). See also [https://github.com/alexji/linemake](https://github.com/alexji/linemake).
+The [ch_masseron](https://github.com/vmplacco/linemake/tree/ch_masseron) branch contains the most up to date `CH` line list from [Masseron et al. (2014, A&A, 571, 47)](https://ui.adsabs.harvard.edu/abs/2014A%26A...571A..47M/abstract). See also [https://github.com/alexji/linemake](https://github.com/alexji/linemake).
 
 ## About 
 
