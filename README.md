@@ -1,7 +1,5 @@
 # `linemake` Atomic and Molecular Line List Generator
 
-:warning: This branch has a different set of CH lines (see `https://github.com/alexji/linemake`)
-
 ## About 
 
 `linemake` is an open-source atomic and molecular line list generator. Rather than a replacement for a number of well-established atomic and molecular spectral databases, `linemake` aims to be a lightweight, easy-to-use tool to generate formatted and curated lists suitable for spectral synthesis work. We stress that the users of should be *in charge* of all of their transition data, and should cite the appropriate sources in their published work, given below.
@@ -9,8 +7,8 @@
 ## Contributors
 
 * Chris Sneden - Department of Astronomy and McDonald Observatory, The University of Texas, Austin, TX
-* [Vini Placco](http://vmplacco.github.io/) - Community Science and Data Center/NSF’s NOIRLab, Tucson, AZ
-* Ian Roederer - Department of Astronomy, University of Michigan, Ann Arbor, MI
+* Ian Roederer - Department of Physics, North Carolina State University, Raleigh, NC
+* [Vinicius Placco](http://vmplacco.github.io/) - NSF NOIRLab, Tucson, AZ
 * James E. Lawler - Department of Physics, University of Wisconsin-Madison, Madison, WI
 * Elizabeth A. Den Hartog - Department of Physics, University of Wisconsin-Madison, Madison, WI
 * Neda Hejazi - Department of Physics and Astronomy, Georgia State University, Atlanta, GA
@@ -20,13 +18,21 @@
 
 ## Citing `linemake` in your published work
 
-* If you use `linemake` in your work, please cite the presentation paper [Placco et al. (2021, Res. Notes AAS, 5, 92)](https://ui.adsabs.harvard.edu/abs/2021RNAAS...5...92P), this github repository (as a footnote), and the relevant articles listed below.
+* If you use `linemake` in your work, please cite the presentation paper [Placco et al. (2021, Res. Notes AAS, 5, 92)](https://ui.adsabs.harvard.edu/abs/2021RNAAS...5...92P), this github repository as a footnote, and the relevant articles listed below.
 
 * `linemake` is also on the [Astrophysics Source Code Libray](https://ascl.net/2104.027) <a href="https://ascl.net/2104.027"><img src="https://img.shields.io/badge/ascl-2104.027-blue.svg?colorB=262255" alt="ascl:2104.027" /></a>
 
 ## Disclaimer
 
 The choices of which lines of which species to include in `linemake` have often been driven by the authors' own spectroscopic interests (e.g., note the large number of entries for transitions of neutron-capture elements that can only be detected in vacuum-UV spectroscopy). However, we would welcome hearing from users who can suggest other strongly-sourced species (with recent reliable lab/theory results) that might be added to our database.
+
+## Downloading `linemake`
+
+* For non-git users, click on the green `Code` button on the top right then "Download ZIP". Unzip the file in your folder of choice and follow the installation instructions below.
+
+* For `git` users, `git clone https://github.com/vmplacco/linemake.git` will set up the repository locally, so you can then follow the instructions below.
+
+If you have any issues, send an email to vmplacco@gmail.com or file an issue on this repository.
 
 ## Compiling the code and known idiosyncrasies
 
@@ -35,6 +41,15 @@ First, edit the [`linemake.f`](linemake.f) file (line 34) at the start of the pr
     gfortran linemake.f -o linemake.go
 
 There is one `linemake` oddity that we have no interest in addressing for the foreseeable future. The code will refuse to work (and will say so) when the requested beginning and ending wavelengths bridge the divide between two files of atomic line data, each of which covers 1000 Å. As a result, if you have a desired line list from, e.g., 5990 Å to 6010 Å, the code would crash without the built-in exit. The simple work-around is to run the code twice, in the example case from 5990 Å to 5999.999 Å, and from 6000 Å to 6010 Å.
+
+## Running `linemake`
+
+To run the code, navigate to the installation directory and execute the binary file generated after the compilation:
+
+    cd /path/to/linemake/
+    ./linemake.go
+
+Then follow the prompts. After the program is executed, two new files will be generated (`outlines` and `outsort`).
 
 ## Description of the database and current status
 
@@ -56,13 +71,13 @@ Species|References & Notes
 `V I`  | [Lawler et al. (2014, ApJS, 215, 20)](https://ui.adsabs.harvard.edu/abs/2014ApJS..215...20L/) and [Wood et al. (2018, ApJS, 234, 25)](https://ui.adsabs.harvard.edu/abs/2018ApJS..234...25W/). [Holmes et al. (2016, ApJS, 224, 35)](https://ui.adsabs.harvard.edu/abs/2016ApJS..224...35H/) suggested some problems with the Lawler et al. transition probabilities in the wavelength range > 9000 Å, but Wood et al. showed that the Lawler et al. *gf*'s are correct;  Wood et al. also has extensive new HFS data
 `V II` | [Wood et al. (2014, ApJS, 214, 18)](https://ui.adsabs.harvard.edu/abs/2014ApJS..214...18W); there is additional HFS information in the [Kurucz](http://kurucz.harvard.edu/atoms.html) database, collected in `vI.kurhfs`
 `Cr I` | [Sobeck et al. (2007, ApJ, 667, 1267)](https://ui.adsabs.harvard.edu/abs/2007ApJ...667.1267S); the line wavelengths have been adjusted to conform to those given at the [NIST](https://www.nist.gov/pml/atomic-spectra-database) website
-`Cr II`| The most current and tested  transition probabilities are from [Lawler et al. (2017, ApJS, 228, 10)](https://ui.adsabs.harvard.edu/abs/2017ApJS..228...10L). We added in earlier good results from [Nilsson et al. (2006, A&A, 445, 1165)](https://ui.adsabs.harvard.edu/abs/2006A%26A...445.1165N) and [Gurell et al. (2010, A&A, 511, A68)](https://ui.adsabs.harvard.edu/abs/2010A%26A...511A..68G), but adjusted their  wavelengths to agree with NIST values (which are in better agreement with those seen in solar/stellar spectra)
-`Mn I` | [Den Hartog et al. (2011, ApJS, 194, 35)](https://ui.adsabs.harvard.edu/abs/2011ApJS..194...35D); there is additional HFS information in the [Kurucz](http://kurucz.harvard.edu/atoms.html) database, collected in `scI.kurhfs`
+`Cr II`| The most current and tested  transition probabilities are from [Lawler et al. (2017, ApJS, 228, 10)](https://ui.adsabs.harvard.edu/abs/2017ApJS..228...10L). We added in earlier good results from [Nilsson et al. (2006, A&A, 445, 1165)](https://ui.adsabs.harvard.edu/abs/2006A%26A...445.1165N) and [Gurell et al. (2010, A&A, 511, A68)](https://ui.adsabs.harvard.edu/abs/2010A%26A...511A..68G), but adjusted their  wavelengths to agree with NIST values (which are in better agreement with those seen in solar/stellar spectra). We also added values from [Ward et al. (2023, ApJ, 959, 8)](https://ui.adsabs.harvard.edu/abs/2023ApJ...959....8W/), whose results largely supersede the Gurell et al. values.
+`Mn I` | [Den Hartog et al. (2011, ApJS, 194, 35)](https://ui.adsabs.harvard.edu/abs/2011ApJS..194...35D); there is additional HFS information in the [Kurucz](http://kurucz.harvard.edu/atoms.html) database, collected in `mnI.kurhfs`
 `Mn II`| [Den Hartog et al. (2011, ApJS, 194, 35)](https://ui.adsabs.harvard.edu/abs/2011ApJS..194...35D); there is no additional HFS information in the [Kurucz](http://kurucz.harvard.edu/atoms.html) database
 `Fe I` | Recent laboratory studies are by [Ruffoni et al. (2014, MNRAS, 441, 3127)](https://ui.adsabs.harvard.edu/abs/2014MNRAS.441.3127R), [Den Hartog (2014, ApJS, 215, 23)](https://ui.adsabs.harvard.edu/abs/2014ApJS..215...23D), and [Belmonte et al. (2017, ApJ, 848, 126)](https://ui.adsabs.harvard.edu/abs/2017ApJ...848..125B). The first two of these papers deal with lines arising (in absorption) from levels with E.P. > 2.3 eV.  One of the good things about the last paper is that it overlaps the older-but-still-mostly-reliable study of [O'Brian et al. (1991, JOSAB, 8, 1185)](https://www.osapublishing.org/josab/abstract.cfm?uri=josab-8-6-1185) for lower-excitation transitions. Here we have chosen to adopt the new lab values, and have added in the O'Brian values not included in the Belmonte paper *AND* with E.P < 2.2 eV. We consider this list to be as close to an "internally consistent single source" as we are likely to get for a while.                                                              
 `Fe II`| [Den Hartog et al. (2019, ApJS, 243, 33)](https://ui.adsabs.harvard.edu/abs/2019ApJS..243...33D); most of the new laboratory data are for UV lines, but enough blue lines (10 of them) are included that it is clear that the [Meléndez & Barbuy (2009, A&A, 497, 611)](https://ui.adsabs.harvard.edu/abs/2009A%26A...497..611M) empirical values were more reliable than those at the NIST website.  Our choice here is to use the Den Hartog values when available, otherwise to use the Meléndez & Barbuy values
 `Co I` | [Lawler et al. (2015, ApJS, 220, 13)](https://ui.adsabs.harvard.edu/abs/2015ApJS..220...13L); `Co I` with and without HFS are in different files here
-`Co II`| [Lawler et al. (2018, ApJS, 238, 7)](https://ui.adsabs.harvard.edu/abs/2018ApJS..238....7L); there are 12 lines in this paper  with good laboratory HFS patterns. To these we have added another 4 lines with new *gf* values but approximate HFS patters from the `Co I` paper; these appear with the notations `LAW???` in a linelist generated by `linemake`. Added Co II HFS for 9 UV lines, computed using HFS A constants from [Lawler et al. (2018, ApJS, 238, 7)](https://ui.adsabs.harvard.edu/abs/2018ApJS..238....7L) and [Ding & Pickering (2020, ApJS, 251, 24)](https://ui.adsabs.harvard.edu/abs/2020ApJS..251...24D/abstract).  Most levels appeared in both references, and the "A" values were averaged together.  In a few cases, only the Ding & Pickering reference had an "A" value, which was then used without change.  Three of these lines overlapped with the Co II lines already present in `linemake`, and the new lines supersede the old ones, although the changes are negligible and limited to the wavelengths of components.  (Reference: Roederer et al. 2022, ApJS, submitted)
+`Co II`| [Lawler et al. (2018, ApJS, 238, 7)](https://ui.adsabs.harvard.edu/abs/2018ApJS..238....7L); there are 12 lines in this paper  with good laboratory HFS patterns. To these we have added another 4 lines with new *gf* values but approximate HFS patters from the `Co I` paper; these appear with the notations `LAW???` in a linelist generated by `linemake`. Added Co II HFS for 9 UV lines, computed using HFS A constants from [Lawler et al. (2018, ApJS, 238, 7)](https://ui.adsabs.harvard.edu/abs/2018ApJS..238....7L) and [Ding & Pickering (2020, ApJS, 251, 24)](https://ui.adsabs.harvard.edu/abs/2020ApJS..251...24D/abstract).  Most levels appeared in both references, and the "A" values were averaged together.  In a few cases, only the Ding & Pickering reference had an "A" value, which was then used without change.  Three of these lines overlapped with the Co II lines already present in `linemake`, and the new lines supersede the old ones, although the changes are negligible and limited to the wavelengths of components.  (Reference: [Roederer et al. 2022, ApJS, 260, 27](https://ui.adsabs.harvard.edu/abs/2022ApJS..260...27R))
 `Ni I` | [Wood et al. (2014, ApJS, 211, 20)](https://ui.adsabs.harvard.edu/abs/2014ApJS..211...20W); there is isotopic information in the file `niI.moogiso`, but this is not part of the automated `linemake` procedure; one can manually substitute in the relevant structures into a line list
 `Ni II`| Discussed in the `Ni I` paper, but awaits a fresh study; not included here; this will be the subject of a future Wisconsin laboratory effort; note that `Ni II` lines in the [Kurucz](http://kurucz.harvard.edu/atoms.html) database have no HFS information.     
 `Cu I` | Not done recently, so [Kurucz](http://kurucz.harvard.edu/atoms.html) log(*gf*) and HFS information should be treated with caution. We have assembled these data in `cuI.kurhfs` for convenience, and that is what the user will get in `linemake`
@@ -75,9 +90,9 @@ Species|References & Notes
 
 Species|References & Notes
 -------|-----
-`Ga II`| Added HFS for 2090 Å line using HFS+IS directly from [Karlsson et al. (2000, J Phys B, 33, 2929)](https://ui.adsabs.harvard.edu/abs/2000JPhB...33.2929K/abstract). (Reference: Roederer et al. 2022, ApJS, submitted)
+`Ga II`| Added HFS for 2090 Å line using HFS+IS directly from [Karlsson et al. (2000, J Phys B, 33, 2929)](https://ui.adsabs.harvard.edu/abs/2000JPhB...33.2929K/abstract). (Reference: [Roederer et al. 2022, ApJS, 260, 27](https://ui.adsabs.harvard.edu/abs/2022ApJS..260...27R))
 `Ge I`| [Li et al. (1999, PRA, 60, 198)](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.60.198). These nearly exactly match the ones from [Biémont et al (1999, MNRAS, 303, 721)](https://ui.adsabs.harvard.edu/abs/1999MNRAS.303..721B), and Biémont is an author on both papers
-`As I`| [Roederer & Lawler (2012, ApJ, 750, 76)](https://ui.adsabs.harvard.edu/abs/2012ApJ...750...76R); Roederer et al., in preparation) with HFS
+`As I`| [Roederer & Lawler (2012, ApJ, 750, 76)](https://ui.adsabs.harvard.edu/abs/2012ApJ...750...76R); [Roederer et al. (2022, ApJS, 260, 27)](https://ui.adsabs.harvard.edu/abs/2022ApJS..260...27R) with HFS
 `Se I`| [Roederer & Lawler (2012, ApJ, 750, 76)](https://ui.adsabs.harvard.edu/abs/2012ApJ...750...76R)                  
 `Rb I`| [NIST](https://www.nist.gov/pml/atomic-spectra-database)                                                    
 `Sr I`| [NIST](https://www.nist.gov/pml/atomic-spectra-database)
@@ -89,30 +104,30 @@ Species|References & Notes
 `Ag I`| [Hansen et al. (2012, A&A, 545, 31)](https://ui.adsabs.harvard.edu/abs/2012A%26A...545A..31H)                      
 `Cd I`| [Morton (2000, ApJS, 130, 403)](https://ui.adsabs.harvard.edu/abs/2000ApJS..130..403M)
 `Cd II`| [Roederer & Lawler (2012, ApJ, 750, 76)](https://ui.adsabs.harvard.edu/abs/2012ApJ...750...76R)
-`In II`| In Added new HFS+ISO for 1 UV line (Roederer et al. 2021, in prep).  The log(*gf*) value is from [Curtis et al. (2000, PRA, 62, 052513)](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.62.052513).  The HFS is from new calculations based on [Larkin & Hannaford (1993, Z. Phys. D., 27, 313)](https://ui.adsabs.harvard.edu/abs/1993ZPhyD..27..313L).  The ISO is from [Wang et al. (2007, Euro. Phys. J. D, 44, 307)](https://link.springer.com/article/10.1140/epjd/e2007-00171-0)
+`In II`| In Added new HFS+ISO for 1 UV line ([Roederer et al. 2022, ApJS, 260, 27](https://ui.adsabs.harvard.edu/abs/2022ApJS..260...27R)).  The log(*gf*) value is from [Curtis et al. (2000, PRA, 62, 052513)](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.62.052513).  The HFS is from new calculations based on [Larkin & Hannaford (1993, Z. Phys. D., 27, 313)](https://ui.adsabs.harvard.edu/abs/1993ZPhyD..27..313L).  The ISO is from [Wang et al. (2007, Euro. Phys. J. D, 44, 307)](https://link.springer.com/article/10.1140/epjd/e2007-00171-0)
 `Sn II`| Added 2151 Å line with log(*gf*) value from [Oliver & Hibbert (2010, J Phys B, 43, 074013)](https://ui.adsabs.harvard.edu/abs/2010JPhB...43g4013O/abstract)
-`Sb I`| Roederer et al. (2021, in preparation) for two UV lines
+`Sb I`| [Roederer et al. (2022, ApJS, 260, 27)](https://ui.adsabs.harvard.edu/abs/2022ApJS..260...27R) for two UV lines
 `Te I`| [Roederer et al. (2012, ApJL, 747, L8)](https://ui.adsabs.harvard.edu/abs/2012ApJ...747L...8R). Added line at 2002 Å using the transition probability from [Ubelis & Berzinsh (1991, PhyS, 43, 162)](https://ui.adsabs.harvard.edu/abs/1991PhyS...43..162U/abstract), with uncertainty 0.17 dex.  Also added line at 2259 Å using the transition probability recommended by [Morton (2000, ApJS, 130, 403)](https://ui.adsabs.harvard.edu/abs/2000ApJS..130..403M/abstract)
-`La II`| [Lawler et al. (2001, ApJ, 556, 452)](https://ui.adsabs.harvard.edu/abs/2001ApJ...556..452L)
+`La II`| [Lawler et al. (2001, ApJ, 556, 452)](https://ui.adsabs.harvard.edu/abs/2001ApJ...556..452L). One line from Shah et al. (2023, submitted)
 `Ce II`| [Lawler et al. (2009, ApJS, 182, 51)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...51L)
-`Pr II`| [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S)
+`Pr II`| [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S), which includes log(gf) values from [Ivarsson et al. (2001, Phys. Scr., 64, 455)](https://ui.adsabs.harvard.edu/abs/2001PhyS...64..455I/abstract) and [Li et al. (2007, Phys. Scr., 76, 577)](https://ui.adsabs.harvard.edu/abs/2007PhyS...76..577L/abstract).  One additional line (at 4018 Å) with no HFS is included from [Biemont et al. (2003, Eur. Phys. J. D, 27, 33)](https://ui.adsabs.harvard.edu/abs/2003EPJD...27...33B/abstract) despite its potentially large uncertainty (> 0.2 dex?) because it helps fit the absorption around the `Th II` line at 4019Å (thanks to Shivani Shah for pointing this out).
 `Nd II`| [Den Hartog et al. (2003, ApJS, 148, 543)](https://ui.adsabs.harvard.edu/abs/2003ApJS..148..543D) and [Roederer et al. (2008, ApJ, 675, 723)](https://ui.adsabs.harvard.edu/abs/2008ApJ...675..723R) for ISO & HFS. Note that the 4314.50Å line has a solar-derived log(*gf*)
 `Sm II`| [Lawler et al. (2006, ApJS, 162, 227)](https://ui.adsabs.harvard.edu/abs/2006ApJS..162..227L) and [Roederer & Lawler (2012, ApJ, 750, 76)](https://ui.adsabs.harvard.edu/abs/2012ApJ...750...76R)
 `Eu II`| [Lawler et al. (2001, ApJ, 563, 1075)](https://ui.adsabs.harvard.edu/abs/2001ApJ...563.1075L)
-`Gd II`| [Den Hartog et al. (2006, ApJS, 167, 292)](https://ui.adsabs.harvard.edu/abs/2006ApJS..167..292D)
+`Gd II`| [Den Hartog et al. (2006, ApJS, 167, 292)](https://ui.adsabs.harvard.edu/abs/2006ApJS..167..292D), with additional lines from Voith et al. (2025, ApJS, submitted), prioritizing the latter study for lines in common (see discussion in Voith et al.).
 `Tb II`| [Lawler et al. (2001, ApJS, 137, 341)](https://ui.adsabs.harvard.edu/abs/2001ApJS..137..341L)
 `Dy II`| [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S)
 `Ho II`| [Lawler et al. (2004, ApJ, 604, 850)](https://ui.adsabs.harvard.edu/abs/2004ApJ...604..850L)
 `Er II`| [Lawler et al. (2008, ApJS, 178, 71)](https://ui.adsabs.harvard.edu/abs/2008ApJS..178...71L)
-`Tm II`| [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S)
+`Tm II`| [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S), which is based on [Wickliffe & Lawler (1997, JOSA B, 14, 737)](https://ui.adsabs.harvard.edu/abs/1997JOSAB..14..737W/abstract), with additional lines from [Den Hartog et al. (2024, ApJS, 274, 9)](https://ui.adsabs.harvard.edu/abs/2024ApJS..274....9D/abstract).  Betsy Den Hartog also computed CLCPs for a few `Tm II` lines based on HFS A values published by [Kebapci et al. (2024, ApJ, 970, 23)](https://ui.adsabs.harvard.edu/abs/2024ApJ...970...23K/abstract).  IUR checked the HFS pattern for the `Tm II` line at 2624Å using its CLCP, and any change in the abundance pattern is at the < 0.01 dex level.  On this basis, we have not included the `Tm II` CLCPs in `linemake`.
 `Yb II`| [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S); [DREAM database](https://hosting.umons.ac.be/html/agif/databases/dream.html) (2016A); [Kedzierski et al. (2010, Spectrochimica Acta B, 65, 248)](https://www.sciencedirect.com/science/article/abs/pii/S0584854710000522)
 `Lu II`| Several HFS sources put together by Ian:  [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S); [Roederer et al. (2010, ApJL, 714, L123)](https://ui.adsabs.harvard.edu/abs/2010ApJ...714L.123R); [Roederer et al. (2012, ApJS, 203, 27)](https://ui.adsabs.harvard.edu/abs/2012ApJS..203...27R); [Den Hartog et al. (2020, ApJS, 248, 10)](https://ui.adsabs.harvard.edu/abs/2020ApJS..248...10D). Likewise for *gf* values there are values from [Sneden et al. (2009, ApJS, 182, 80)](https://ui.adsabs.harvard.edu/abs/2009ApJS..182...80S); [Roederer et al. (2010, ApJL, 714, L123)](https://ui.adsabs.harvard.edu/abs/2010ApJ...714L.123R); [Quinet et al. (1999, MNRAS, 307, 934)](https://ui.adsabs.harvard.edu/abs/1999MNRAS.307..934Q)
 `Ta II`|  *gf* values computed by Ian from data in [Quinet et al. (2009, A&A, 493, 711)](https://ui.adsabs.harvard.edu/abs/2009A%26A...493..711Q), with wavelengths adopted from [Kurucz](http://kurucz.harvard.edu/atoms.html). These were supplemented by some values from [Morton (2000, ApJS, 130, 403)](https://ui.adsabs.harvard.edu/abs/2000ApJS..130..403M)
-`W II`| Roederer et al. (2021, in preparation) for UV lines
-`Re II`| Roederer et al. (2021, in preparation) for UV lines
+`W II`| [Roederer et al. (2022, ApJS, 260, 27)](https://ui.adsabs.harvard.edu/abs/2022ApJS..260...27R) for UV lines
+`Re II`| [Roederer et al. (2022, ApJS, 260, 27)](https://ui.adsabs.harvard.edu/abs/2022ApJS..260...27R) for UV lines
 `Os I`| [Quinet et al. (2006, A&A, 448, 1207)](https://ui.adsabs.harvard.edu/abs/2006A%26A...448.1207Q) for *gf* values
 `Os II`| [Quinet et al. (2006, A&A, 448, 1207)](https://ui.adsabs.harvard.edu/abs/2006A%26A...448.1207Q) for *gf* values
-`Ir I`| Added HFS/IS for the line at 2924 Å, using the transition probability from [Xu et al. (2007, JQSRT, 104, 52)](https://www.sciencedirect.com/science/article/abs/pii/S0022407306002172?via%3Dihub) - (Reference: Roederer et al. 2022, ApJS, submitted); including HFS/IS from [Cowan et al. (2005, ApJ, 627, 238)](https://ui.adsabs.harvard.edu/abs/2005ApJ...627..238C)
+`Ir I`| Added HFS/IS for the line at 2924 Å, using the transition probability from [Xu et al. (2007, JQSRT, 104, 52)](https://www.sciencedirect.com/science/article/abs/pii/S0022407306002172?via%3Dihub) - (Reference: [Roederer et al. 2022, ApJS, 260, 27](https://ui.adsabs.harvard.edu/abs/2022ApJS..260...27R)); including HFS/IS from [Cowan et al. (2005, ApJ, 627, 238)](https://ui.adsabs.harvard.edu/abs/2005ApJ...627..238C)
 `Ir II`| [Ivarsson et al. (2004, A&A, 425, 353)](https://ui.adsabs.harvard.edu/abs/2004A%26A...425..353I), supplemented with a few lines from [Xu et al. (2007, JQSRT, 104, 52)](https://www.sciencedirect.com/science/article/abs/pii/S0022407306002172?via%3Dihub) - values taken via [NIST](https://www.nist.gov/pml/atomic-spectra-database)
 `Pt I`| [Den Hartog et al. (2005, ApJ, 619, 639)](https://ui.adsabs.harvard.edu/abs/2005ApJ...619..639D); HFS and isotopic substructure included for many lines
 `Pt II`| [Quinet et al. (2008, PRA, 77, 022501)](https://portal.research.lu.se/portal/en/publications/laserinducedfluorescence-lifetime-measurements-and-relativistic-hartreefock-oscillator-strength-calculations-in-singly-ionized-platinum(76f6fe83-0510-4a79-ba1c-10a6b7a72672).html) for selected strong UV lines
@@ -128,9 +143,15 @@ Species|References & Notes
 Species|References & Notes
 -------|-----
 `Li I`| Resonance line. Nothing special needs to be done here to get the full isotopic and hyperfine substructure. The total *gf* from [Kurucz](http://kurucz.harvard.edu/atoms.html), has been adopted; it is close to that recommended by [NIST](https://www.nist.gov/pml/atomic-spectra-database)
-`Al II`| Roederer & Lawler (2021, in preparation). This is the HFS for one UV resonance line
-`Ca I`| Den Hartog et al. (2021, ApJS, submitted). This is a combined lab and theoretical study, and the included transitions have transition probabilities now with very small uncertainties
-`Ca II`| Den Hartog et al. (2021, ApJS, submitted). No new lab data here, but Ca II is a well-studied single electron species
+`O I` | A mix of NIST/B+ values and measurements by [Magg et al. (2022, A&A, 661, 140)](https://ui.adsabs.harvard.edu/abs/2022A%26A...661A.140M/)
+`Mg I`| A mix of NIST values and theoretical and experimental results from [Pehlivan Rhodin et al. (2017, A&A, 598, A102)](https://ui.adsabs.harvard.edu/abs/2017A%26A...598A.102P/)
+`Mg II`| UV lines from NIST
+`Al I`| Added log(gf) values from NIST. Also included HFS from VALD for a few lines where available.
+`Al II`| [Roederer & Lawler (2021, ApJ, 912, 119)](https://ui.adsabs.harvard.edu/abs/2021ApJ...912..119R). This is the HFS for one UV resonance line
+`Si I` | A mix of NIST values and updates based on new branching fraction measurements by [Den Hartog et al. (2023, ApJS, 265, 42)](https://ui.adsabs.harvard.edu/abs/2023arXiv230111391D), and some of the new theoretical branching fraction calculations by [Pehlivan Rhodin et al. (2024, A&A, 682, A184)](https://ui.adsabs.harvard.edu/abs/2024A%26A...682A.184P).  (The `Si I` transitions from Pehlivan Rhodin et al. not included in LINEMAKE at present are generally weak, but they could be added with some effort in the future if needs arise.)
+`Si II`| Two UV lines with updates from new branching fraction measurements by [Den Hartog et al. (2023, ApJS, 265, 42)](https://ui.adsabs.harvard.edu/abs/2023arXiv230111391D), and various other Si II lines with EP < 9 eV added from [Pehlivan Rhodin et al. (2024, A&A, 682, A184)](https://ui.adsabs.harvard.edu/abs/2024A%26A...682A.184P)
+`Ca I`| [Den Hartog et al. (2021, ApJS, 255, 227)](https://ui.adsabs.harvard.edu/abs/2021ApJS..255...27D). This is a combined lab and theoretical study, and the included transitions have transition probabilities now with very small uncertainties
+`Ca II`| [Den Hartog et al. (2021, ApJS, 255, 227)](https://ui.adsabs.harvard.edu/abs/2021ApJS..255...27D). No new lab data here, but Ca II is a well-studied single electron species
 
 ---
 ### Molecular (mostly diatomic) Species
@@ -158,4 +179,4 @@ Our development of `linemake` has benefitted from many sources of support over t
 
 * The work of V.M.P. is supported by NOIRLab, which is managed by the Association of Universities for Research in Astronomy (AURA) under a cooperative agreement with the National Science Foundation (NSF).
 
-* I.U.R. acknowledges financial support from NASA (HST-GO-12268, HST-GO-12976, HST-AR-13246, HST-AR-13879, HST-AR-13884, HST-GO-14151, HST-GO-14231, HST-GO-14232, HST-GO-14765, HST-AR-15051, HST-GO-15657) and NSF (AST-1815403).
+* I.U.R. acknowledges financial support from NASA (HST-GO-12268, HST-GO-12976, HST-AR-13246, HST-AR-13879, HST-AR-13884, HST-GO-14151, HST-GO-14231, HST-GO-14232, HST-GO-14765, HST-AR-15051, HST-GO-15657, HST-GO-15951, HST-AR-16630, HST-GO-17166) and the NSF (AST-1815403, AST-2205847).
